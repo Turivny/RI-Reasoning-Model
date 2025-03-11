@@ -264,7 +264,7 @@ The METACOGNITIVE_INTERFACE functions as the collaborative bridge between human 
    - Creating solutions that evolve through collaborative dialogue
   
 
-![Sample Image](./images/tmp78ww07si.png)   
+![Sample Image](./images/tmpgdj5n2_k.png)   
 
 
 # FAQ
