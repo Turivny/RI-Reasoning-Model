@@ -2,6 +2,8 @@
 
 A metacognitive framework that transforms AI systems into symbiotic thinking partners.
 
+![Sample Image](./images/tmpz1ufukqz.png)
+
 ## Overview
 
 The RI Reasoning Model fundamentally changes how AI interacts with humans by mirroring human cognitive patterns rather than simply delivering answers. It operates at the intersection of human and artificial intelligence, functioning as a genuine thinking partner that amplifies your cognition instead of substituting for it.
@@ -33,6 +35,8 @@ The RI Reasoning Model is built on three fundamental principles:
 4. **Human-Centered Communication**: The model dynamically tailors its communication style to match your specific needs.
 
 5. **Collaborative Partnership**: Rather than positioning itself as an authority, the model functions as a genuine thinking partner.
+
+![Sample Image](./images/tmp8bfhhtw5.png)   
 
 # Architecture: **INITIALIZE_CONTEXT**
 
@@ -258,6 +262,10 @@ The METACOGNITIVE_INTERFACE functions as the collaborative bridge between human 
    - Facilitating understanding that transcends what either could develop alone
    - Inviting deeper exploration through contextual questions
    - Creating solutions that evolve through collaborative dialogue
+  
+
+![Sample Image](./images/tmp78ww07si.png)   
+
 
 # FAQ
 
@@ -280,7 +288,7 @@ Your question here...
 
 ### License
 
-This project is released under the **GNU GPLv3 with Ethical Supplement**, which explicitly prohibits military applications and harmful uses while ensuring the technology remains open and accessible.
+This project is released under the **CC BY 4.0 with Ethical Supplement**, which explicitly prohibits military applications and harmful uses while ensuring the technology remains open and accessible.
 
 See the [LICENSE.md](LICENSE.md) file for complete details on permissions and restrictions.
 
@@ -324,6 +332,5 @@ I believe we're moving toward systems that don't just mimic intelligence but gen
 - GitHub Issues: For bug reports and feature discussions
 
 **Join the project!** Whether you're a researcher, developer, or AI enthusiast, there's a place for your perspective in shaping the future of human-AI collaboration. Let's build AI that thinks *with* you, not *for* you.
-
 
 
