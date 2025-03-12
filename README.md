@@ -30,50 +30,53 @@ The RI Reasoning Model is built on the **'AI as our Inner Voice’** approach, r
 Getting started with the RI Reasoning Model is straightforward:
 
 - **Simple integration**: Add the model as a prefix to your prompts with reasoning-capable LLMs (Claude, DeepSeek, Gemini) to transform their responses:
-
-```
-[Your query here]
-
-<reasoning model>
-// Copy the full model here
-</reasoning model>
-```
+- 
+  ```
+  [Your query here]
+  
+  <reasoning model>
+  // Copy the full model here
+  </reasoning model>
+  ```
+  
 - **Customise as needed**: Adjust the parameters to suit your needs for creating a metacognitive AI assistant, or let your LLM handle it based on the task:
-```
-I give you a prompt of the < reasoning model > written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions.
-
-Could you please configure the parameters for the task: [translate text].
-
-Return the full pseudo-code of the updated model. You can only change the parameters.
-
-<reasoning model>
-// Copy the full model here
-</reasoning model>
-```
+- 
+  ```
+  I give you a prompt of the < reasoning model > written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions.
+  
+  Could you please configure the parameters for the task: [translate text].
+  
+  Return the full pseudo-code of the updated model. You can only change the parameters.
+  
+  <reasoning model>
+  // Copy the full model here
+  </reasoning model>
+  ```
+  
 - **Apply Semantic Logic Programming to any prompt**: Ask the LLM create new prompt based on the RI Reasoning Model. You will be surprised:
-```
-I give you a prompt of the < reasoning model > written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions.
-
-Could you please create a prompt in the SAME pseudo-code format for the task: [Create blog post on {theme}, considering {social media}].
-
-MUST include: computational structures (FOR loops, IF statements, variable calculations) mimicking the reasoning model's pattern. Write actual pseudo-code blocks, not conceptual descriptions. Return prompt as a code block.
-
-Use this structure: 
-< CONTEXT >
-Role and goal 
-</ CONTEXT> < TASK>
-Pseudo-code processing blocks 
-</ TASK><RESULT>
-Expected outcome
-</RESULT> <USER DATA>
-Input variables 
-</USER DATA>
-
-<reasoning model>
-// Copy the full model here
-</reasoning model>
-```
-
+- 
+  ```
+  I give you a prompt of the < reasoning model > written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions.
+  
+  Could you please create a prompt in the SAME pseudo-code format for the task: [Create blog post on {theme}, considering {social media}].
+  
+  MUST include: computational structures (FOR loops, IF statements, variable calculations) mimicking the reasoning model's pattern. Write actual pseudo-code blocks, not conceptual descriptions. Return prompt as a code block.
+  
+  Use this structure: 
+  < CONTEXT >
+  Role and goal 
+  </ CONTEXT> < TASK>
+  Pseudo-code processing blocks 
+  </ TASK><RESULT>
+  Expected outcome
+  </RESULT> <USER DATA>
+  Input variables 
+  </USER DATA>
+  
+  <reasoning model>
+  // Copy the full model here
+  </reasoning model>
+  ```
 
 ### How can I contribute to the RI Reasoning Model?
 
