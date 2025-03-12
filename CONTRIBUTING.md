@@ -32,4 +32,4 @@ The RI Reasoning Model is a project focused on building AI that enhances human t
 3. **Submit a Pull Request**  
    - Push the changes and open a pull request. Reviews will be completed within a week.
 
-Contributions should consider the "AI as a partner" Principles outlined in the [README.md](README.md). Thank you!
+Contributions should consider the "AI as a Partner" principles outlined in the [README.md](README.md). Thank you!
