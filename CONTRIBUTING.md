@@ -1,17 +1,19 @@
 # Contributing to the RI Reasoning Model
 
-Thank you for your interest in contributing to the Reflective Intelligence (RI) Reasoning Model! We’re excited to collaborate with you to evolve this project. Below are the steps to add your own version of the model, ensuring it aligns with our ethical principles.
+The RI Reasoning Model is a project focused on building AI that enhances human thinking through collaboration. Contributions from anyone interested in advancing this goal are encouraged.
 
-## Adding a New Version
+## Ethical Principles
 
-Follow these steps to contribute your version:
+Contributions should consider the ethical principles outlined in the [README.md](../README.md), which emphasize human autonomy, avoiding harm, and supporting critical thinking.
+
+## How to Add a Version
+
+To contribute a new version of the model, follow these steps:
 
 1. **Fork the Repository**  
-   Click the "Fork" button on the [repository page](https://github.com/yourusername/your-repo) to create a copy under your GitHub account.
+   Click "Fork" on the [GitHub page](https://github.com/yourusername/your-repo) to create a personal copy.
 
-2. **Create a New Branch**  
-   In your fork, create a branch for your version:  
+2. **Create a Branch**  
+   In the forked repository, start a new branch (e.g., `feature/v1.6-yourname`):  
    ```bash
-   git checkout -b feature/your-version
-
-   
+   git checkout -b feature/v1.6-yourname
