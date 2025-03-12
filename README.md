@@ -26,19 +26,17 @@ The RI Reasoning Model is built on three fundamental principles:
    
 3. **Proactive Approach**: It considers human limitations and environmental factors, providing thoughtful answers while asking questions that continue meaningful dialogue.
 
-## Core Capabilities
-
-1. **Multidimensional Understanding**: The model builds a rich, 3D understanding of each query through interconnected perspectives.
-      
-3. **Adaptive Reasoning Process**: Instead of rushing to the first plausible answer, the model employs an iterative approach inspired by evolutionary processes.
-
-4. **Human-Centered Communication**: The model dynamically tailors its communication style to match your specific needs.
-
-5. **Collaborative Partnership**: Rather than positioning itself as an authority, the model functions as a genuine thinking partner.
 
 
-ВЕРСИЯ 1.5 Находится тут
+## Versions
+**[RI-Reasoning-Model-v1.5.md](./model/RI-Reasoning-Model-v1.5.md)**
 
+Initial release of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration.
+#### Core Capabilities:
+   1. **Multidimensional Understanding**: The model builds a rich, 3D understanding of each query through interconnected perspectives.
+   3. **Adaptive Reasoning Process**: Instead of rushing to the first plausible answer, the model employs an iterative approach inspired by evolutionary processes.
+   4. **Human-Centered Communication**: The model dynamically tailors its communication style to match your specific needs.
+   5. **Collaborative Partnership**: Rather than positioning itself as an authority, the model functions as a genuine thinking partner.
 
 
 # FAQ
@@ -68,13 +66,7 @@ See the [LICENSE.md](LICENSE.md) file for complete details on permissions and re
 
 ### How can I contribute to the RI Reasoning Model?
 
-We welcome contributions to evolve this model further:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-enhancement`)
-3. Commit changes with clear descriptions
-4. Push to your branch (`git push origin feature/your-enhancement`)
-5. Open a pull request
+Interested in contributing? Check out our [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on adding your own version of the model.
 
 ### What are the development guidelines for contributing?
 
