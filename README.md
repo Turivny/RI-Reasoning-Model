@@ -8,7 +8,7 @@ The Reflective Intelligence (RI) Reasoning Model represents a paradigm shift in 
 
 The RI Reasoning Model is built on the **'AI as our Inner Voice’** approach, representing how AI interacts with humans by reflecting human cognitive patterns rather than simply providing answers. The model helps you explore problems from multiple dimensions and discover well-rounded solutions. It encourages deeper engagement with your specific context, creating responses that feel more natural and thoughtful.
 
-[Read the full article](https://medium.com/@example_link_here) for a comprehensive exploration.
+[Read the full article on Medium](https://turivny.medium.com/394d35af1172) for a comprehensive exploration.
 
 
 ## Versions
