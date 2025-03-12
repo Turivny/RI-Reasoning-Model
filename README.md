@@ -17,11 +17,7 @@ The RI Reasoning Model is built on the **'AI as our Inner Voice’** approach, r
 
   Initial release of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration.
 
-  Core Capabilities:
-   - Multidimensional Understanding: The model builds a rich, 3D understanding of each query through interconnected perspectives.
-   - Adaptive Reasoning Process: Instead of rushing to the first plausible answer, the model employs an iterative approach inspired by evolutionary processes.
-   - Human-Centered Communication: The model dynamically tailors its communication style to match your specific needs.
-   - Collaborative Partnership: Rather than positioning itself as an authority, the model functions as a genuine thinking partner.
+  [Examples](./model/RI-Reasoning-Model-v1.5.0-turivny-examples.md)
 
 ## FAQ
 
