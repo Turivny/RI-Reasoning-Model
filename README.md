@@ -16,7 +16,7 @@ The RI Reasoning Model fundamentally changes how AI interacts with humans by mir
 
 The goal of the RI Reasoning Model is to amplify human cognition through adaptive, meaningful reasoning. Instead of returning generic answers, the model helps you explore problems from multiple dimensions and discover well-rounded solutions. It encourages deeper engagement with your specific context, creating responses that feel more natural and thoughtful.
 
-##  "AI as a partner" Principles
+##  "AI as a Partner" Principles
 
 The RI Reasoning Model is built on three fundamental principles:
 
