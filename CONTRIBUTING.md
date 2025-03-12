@@ -4,9 +4,6 @@ The RI Reasoning Model is a project focused on building AI that enhances human t
 
 ![Sample Image](./images/tmp290kw7yh.png)
 
-## Ethical Principles
-
-Contributions should consider the ethical principles outlined in the [README.md](../README.md), which emphasize human autonomy, avoiding harm, and supporting critical thinking.
 
 ## How to Add a Version
 
@@ -24,9 +21,9 @@ Contributions should consider the ethical principles outlined in the [README.md]
 2. **Add a Version File**  
    - In the /model folder, create a file named RI-Reasoning-Model-vX.Y.Z-yourname.md, using the version number you chose (e.g., RI-Reasoning-Model-v1.6.0-yourname.md).
    - Each version file should include:  
-      - The code, with clear comments so it’s understandable without extra materials.  
-      - An explanation of how it works and what’s improved.  
-      - Examples showing what it can do.
+      - The code, with clear comments so it’s understandable without extra materials. Maintain readability with consistent formatting.
+      - An explanation of how it works and what’s improved. Clearly document parameter changes or architectural modifications.
+      - Include examples demonstrating your enhancements.  
    - Check the [RI-Reasoning-Model-v1.5.md](./model/RI-Reasoning-Model-v1.5.md) as a reference. Feel free to follow it as a guide, but any new ideas or improvements are welcome!
 
 2. **Update the README**  
@@ -35,4 +32,4 @@ Contributions should consider the ethical principles outlined in the [README.md]
 3. **Submit a Pull Request**  
    - Push the changes and open a pull request. Reviews will be completed within a week.
 
-Thank you!
+Contributions should consider the "AI as a partner" Principles outlined in the [README.md](../README.md). Thank you!
