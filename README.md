@@ -63,11 +63,11 @@ See the [LICENSE.md](LICENSE.md) file for complete details on permissions and re
 
 ### How can I contribute to the RI Reasoning Model?
 
-Interested in contributing? Check out our [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on adding your own version of the model.
+Interested in contributing? Check out [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on adding your own version of the model.
 
 ### What does the Ethical Supplement mean for this project?
 
-The ethical supplement to our license explicitly prohibits:
+The ethical supplement to license explicitly prohibits:
 - Military or weapons-related applications
 - Discriminatory systems or mass surveillance
 - Implementations that may cause physical or psychological harm
