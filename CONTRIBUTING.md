@@ -27,9 +27,9 @@ The RI Reasoning Model is a project focused on building AI that enhances human t
    - Check the [RI-Reasoning-Model-v1.5.md](./model/RI-Reasoning-Model-v1.5.md) as a reference. Feel free to follow it as a guide, but any new ideas or improvements are welcome!
 
 2. **Update the README**  
-   - In [README.md](../README.md), under "Versions," add a link to the new file with a short description.
+   - In [README.md](README.md), under "Versions," add a link to the new file with a short description.
 
 3. **Submit a Pull Request**  
    - Push the changes and open a pull request. Reviews will be completed within a week.
 
-Contributions should consider the "AI as a partner" Principles outlined in the [README.md](../README.md). Thank you!
+Contributions should consider the "AI as a partner" Principles outlined in the [README.md](README.md). Thank you!
