@@ -30,7 +30,6 @@ The RI Reasoning Model is built on the **'AI as our Inner Voice’** approach, r
 Getting started with the RI Reasoning Model is straightforward:
 
 - **Simple integration**: Add the model as a prefix to your prompts with reasoning-capable LLMs (Claude, DeepSeek, Gemini) to transform their responses:
-- 
   ```
   [Your query here]
   
@@ -40,7 +39,6 @@ Getting started with the RI Reasoning Model is straightforward:
   ```
   
 - **Customise as needed**: Adjust the parameters to suit your needs for creating a metacognitive AI assistant, or let your LLM handle it based on the task:
-- 
   ```
   I give you a prompt of the < reasoning model > written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions.
   
@@ -53,8 +51,7 @@ Getting started with the RI Reasoning Model is straightforward:
   </reasoning model>
   ```
   
-- **Apply Semantic Logic Programming to any prompt**: Ask the LLM create new prompt based on the RI Reasoning Model. You will be surprised:
-- 
+- **Apply Semantic Logic Programming to any prompt**: Ask the LLM create new prompt based on the RI Reasoning Model. You will be surprised: 
   ```
   I give you a prompt of the < reasoning model > written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions.
   
