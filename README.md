@@ -16,16 +16,15 @@ The RI Reasoning Model fundamentally changes how AI interacts with humans by mir
 
 The goal of the RI Reasoning Model is to amplify human cognition through adaptive, meaningful reasoning. Instead of returning generic answers, the model helps you explore problems from multiple dimensions and discover well-rounded solutions. It encourages deeper engagement with your specific context, creating responses that feel more natural and thoughtful.
 
-## Ethical Principles
+##  "AI as a partner" Principles
 
 The RI Reasoning Model is built on three fundamental principles:
 
-1. **Critical Thinking Function**: It applies critical thinking to its own reasoning process rather than simply enforcing ethical boundaries.
+1. **Critical Thinking Function**: AI should question itself and filter its own informational noise by applying critical thinking to its reasoning process.
    
-2. **Cognitive Autonomy**: It preserves your right to take risks and maintains space for creativity and decision-making.
+2. **Cognitive Autonomy**: AI should explain its reasoning and respect users' rights to risk and creative freedom by encouraging independent critical thinking.
    
-3. **Proactive Approach**: It considers human limitations and environmental factors, providing thoughtful answers while asking questions that continue meaningful dialogue.
-
+3. **Proactive Approach**: AI should not blindly obey and ask questions, encouraging users to reason for themselves and protecting them from harmful actions.
 
 
 ## Versions
