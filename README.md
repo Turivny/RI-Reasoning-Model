@@ -28,15 +28,18 @@ The RI Reasoning Model is built on three fundamental principles:
 
 
 ## Versions
-**[RI-Reasoning-Model-v1.5.md](./model/RI-Reasoning-Model-v1.5.md)**
 
-Initial release of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration.
-#### Core Capabilities:
-   1. **Multidimensional Understanding**: The model builds a rich, 3D understanding of each query through interconnected perspectives.
-   3. **Adaptive Reasoning Process**: Instead of rushing to the first plausible answer, the model employs an iterative approach inspired by evolutionary processes.
-   4. **Human-Centered Communication**: The model dynamically tailors its communication style to match your specific needs.
-   5. **Collaborative Partnership**: Rather than positioning itself as an authority, the model functions as a genuine thinking partner.
+- **[RI-Reasoning-Model-v1.5.0-turivny](./model/RI-Reasoning-Model-v1.5.0-turivny)**
 
+  Initial release of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration.
+
+  Core Capabilities:
+
+      - Multidimensional Understanding: The model builds a rich, 3D understanding of each query through interconnected perspectives.
+      - Adaptive Reasoning Process: Instead of rushing to the first plausible answer, the model employs an iterative approach inspired by evolutionary processes.
+      - Human-Centered Communication: The model dynamically tailors its communication style to match your specific needs.
+      - Collaborative Partnership: Rather than positioning itself as an authority, the model functions as a genuine thinking partner.
+   
 
 # FAQ
 
