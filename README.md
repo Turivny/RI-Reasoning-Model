@@ -6,25 +6,9 @@ The Reflective Intelligence (RI) Reasoning Model represents a paradigm shift in 
 
 ## Overview
 
-The RI Reasoning Model fundamentally changes how AI interacts with humans by mirroring human cognitive patterns rather than simply delivering answers. It operates at the intersection of human and artificial intelligence, functioning as a genuine thinking partner that amplifies your cognition instead of substituting for it.
+The RI Reasoning Model is built on the **'AI as our Inner Voice’** approach, representing how AI interacts with humans by reflecting human cognitive patterns rather than simply providing answers. The model helps you explore problems from multiple dimensions and discover well-rounded solutions. It encourages deeper engagement with your specific context, creating responses that feel more natural and thoughtful.
 
-**Core Philosophy**: Design AI to be an extension of your thought process, not just an external tool.
-
-[Read the full article](https://medium.com/@example_link_here) for a comprehensive exploration with real-world examples of the model in action.
-
-## Purpose
-
-The goal of the RI Reasoning Model is to amplify human cognition through adaptive, meaningful reasoning. Instead of returning generic answers, the model helps you explore problems from multiple dimensions and discover well-rounded solutions. It encourages deeper engagement with your specific context, creating responses that feel more natural and thoughtful.
-
-##  "AI as a Partner" Principles
-
-The RI Reasoning Model is built on three fundamental principles:
-
-1. **Critical Thinking Function**: AI should question itself and filter its own informational noise by applying critical thinking to its reasoning process.
-   
-2. **Cognitive Autonomy**: AI should explain its reasoning and respect users' rights to risk and creative freedom by encouraging independent critical thinking.
-   
-3. **Proactive Approach**: AI should not blindly obey and ask questions, encouraging users to reason for themselves and protecting them from harmful actions.
+[Read the full article](https://medium.com/@example_link_here) for a comprehensive exploration.
 
 
 ## Versions
@@ -34,11 +18,10 @@ The RI Reasoning Model is built on three fundamental principles:
   Initial release of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration.
 
   Core Capabilities:
-
-      - Multidimensional Understanding: The model builds a rich, 3D understanding of each query through interconnected perspectives.
-      - Adaptive Reasoning Process: Instead of rushing to the first plausible answer, the model employs an iterative approach inspired by evolutionary processes.
-      - Human-Centered Communication: The model dynamically tailors its communication style to match your specific needs.
-      - Collaborative Partnership: Rather than positioning itself as an authority, the model functions as a genuine thinking partner.
+   - Multidimensional Understanding: The model builds a rich, 3D understanding of each query through interconnected perspectives.
+   - Adaptive Reasoning Process: Instead of rushing to the first plausible answer, the model employs an iterative approach inspired by evolutionary processes.
+   - Human-Centered Communication: The model dynamically tailors its communication style to match your specific needs.
+   - Collaborative Partnership: Rather than positioning itself as an authority, the model functions as a genuine thinking partner.
 
 ## FAQ
 
@@ -65,6 +48,17 @@ See the [LICENSE.md](LICENSE.md) file for complete details on permissions and re
 ### How can I contribute to the RI Reasoning Model?
 
 Interested in contributing? Check out [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on adding your own version of the model.
+
+###   What Principles Underlie the Model?
+
+The RI Reasoning Model is built on three "AI as a Partner" principles:
+
+1. **Critical Thinking Function**: AI should question itself and filter its own informational noise by applying critical thinking to its reasoning process.
+   
+2. **Cognitive Autonomy**: AI should explain its reasoning and respect users' rights to risk and creative freedom by encouraging independent critical thinking.
+   
+3. **Proactive Approach**: AI should not blindly obey and ask questions, encouraging users to reason for themselves and protecting them from harmful actions.
+
 
 ### What does the Ethical Supplement mean for this project?
 
