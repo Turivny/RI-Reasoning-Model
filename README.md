@@ -1,6 +1,6 @@
 # The Reflective Intelligence (RI) Reasoning Model
 
-A metacognitive framework that transforms AI systems into symbiotic thinking partners.
+The Reflective Intelligence (RI) Reasoning Model represents a paradigm shift in human-AI collaboration—moving beyond traditional AI interactions toward a true cognitive partnership that amplifies human thinking rather than replacing it.
 
 ![Sample Image](./images/tmpz1ufukqz.png)
 
@@ -41,8 +41,6 @@ Initial release of the RI Reasoning Model, introducing the core framework for sy
 
 # FAQ
 
-The Reflective Intelligence (RI) Reasoning Model represents a paradigm shift in human-AI collaboration—moving beyond traditional AI interactions toward a true cognitive partnership that amplifies human thinking rather than replacing it.
-
 ### How do I get started with the RI Reasoning Model?
 
 Getting started with the RI Reasoning Model is straightforward:
@@ -67,13 +65,6 @@ See the [LICENSE.md](LICENSE.md) file for complete details on permissions and re
 ### How can I contribute to the RI Reasoning Model?
 
 Interested in contributing? Check out our [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on adding your own version of the model.
-
-### What are the development guidelines for contributing?
-
-- **Clean code**: Maintain readability with consistent formatting
-- **Documentation**: Clearly document parameter changes or architectural modifications
-- **Ethical adherence**: Ensure all contributions align with the project's ethical framework
-- **Testing**: Include examples demonstrating your enhancements
 
 ### What does the Ethical Supplement mean for this project?
 
