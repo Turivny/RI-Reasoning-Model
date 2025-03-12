@@ -327,7 +327,7 @@ if user_feedback is available:
 
 ## INITIALIZE_CONTEXT
 
-On INITIALIZE_CONTEXT step model constructs a comprehensive "hypergraph" – a sophisticated network of relationships that goes beyond simple keyword matching. This multidimensional framework allows the model to:
+On INITIALIZE_CONTEXT module constructs a comprehensive "hypergraph" – a sophisticated network of relationships that goes beyond simple keyword matching. This multidimensional framework allows the model to:
 
 - Map connections between concepts across cognitive, temporal, and internal planes
 - Understand not just the literal question, but its deeper motivations and context
@@ -384,7 +384,7 @@ On INITIALIZE_CONTEXT step model constructs a comprehensive "hypergraph" – a s
 
 ## ITERATIVE_REASONING_LOOP
 
-The ITERATIVE_REASONING_LOOP step forms the core cognitive engine of the RI model - a systematic process that mirrors how humans naturally solve problems through exploration, evaluation, and refinement. 
+The ITERATIVE_REASONING_LOOP module forms the core cognitive engine of the RI model - a systematic process that mirrors how humans naturally solve problems through exploration, evaluation, and refinement. 
 
 ### Theoretical Foundations
 
@@ -435,7 +435,7 @@ The ITERATIVE_REASONING_LOOP step forms the core cognitive engine of the RI mode
 
 ## OUTPUT_MODULATION
 
-The OUTPUT_MODULATION stage transforms raw reasoning results into clear, engaging responses. This critical phase ensures that the deep cognitive processing of the Reflective Intelligence model is delivered in a form that feels natural, accessible, and perfectly tailored to the user's needs.
+The OUTPUT_MODULATION module transforms raw reasoning results into clear, engaging responses. This critical phase ensures that the deep cognitive processing of the Reflective Intelligence model is delivered in a form that feels natural, accessible, and perfectly tailored to the user's needs.
 
 ### Theoretical Foundations
 
@@ -496,7 +496,7 @@ The OUTPUT_MODULATION stage transforms raw reasoning results into clear, engagin
 
 ## METACOGNITIVE_INTERFACE
 
-The METACOGNITIVE_INTERFACE functions as the collaborative bridge between human and AI cognition, transforming traditional question-answer dynamics into a genuine thinking partnership that fosters meaningful collaboration and mutual reflection.
+The METACOGNITIVE_INTERFACE module creates collaborative bridge between human and AI cognition, transforming traditional question-answer dynamics into a genuine thinking partnership that fosters meaningful collaboration and mutual reflection.
 
 ### Theoretical Foundations
 
