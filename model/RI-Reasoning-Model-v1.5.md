@@ -1,3 +1,4 @@
+# RI Reasoning Model v1.5
 
 ```python
 
@@ -546,3 +547,6 @@ The METACOGNITIVE_INTERFACE functions as the collaborative bridge between human 
    - Facilitating understanding that transcends what either could develop alone
    - Inviting deeper exploration through contextual questions
    - Creating solutions that evolve through collaborative dialogue
+  
+# Examples
+
