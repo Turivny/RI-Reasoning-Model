@@ -32,12 +32,53 @@ Getting started with the RI Reasoning Model is straightforward:
 - **Simple integration**: Add the model as a prefix to your prompts with reasoning-capable LLMs (Claude, DeepSeek, Gemini) to transform their responses:
 
 ```
-Your question here...
+[Your query here]
 
 <reasoning model>
 // Copy the full model here
 </reasoning model>
 ```
+- **Customise as needed**: Adjust the parameters to suit your needs for creating a metacognitive AI assistant, or let your LLM handle it based on the task:
+```
+I give you a prompt of the < reasoning model > written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions.
+
+Could you please configure the parameters for the task: [translate text].
+
+Return the full pseudo-code of the updated model. You can only change the parameters.
+
+<reasoning model>
+// Copy the full model here
+</reasoning model>
+```
+- **Apply Semantic Logic Programming to any prompt**: Ask the LLM create new prompt based on the RI Reasoning Model. You will be surprised:
+```
+I give you a prompt of the < reasoning model > written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions.
+
+Could you please create a prompt in the SAME pseudo-code format for the task: [Create blog post on {theme}, considering {social media}].
+
+MUST include: computational structures (FOR loops, IF statements, variable calculations) mimicking the reasoning model's pattern. Write actual pseudo-code blocks, not conceptual descriptions. Return prompt as a code block.
+
+Use this structure: 
+< CONTEXT >
+Role and goal 
+</ CONTEXT> < TASK>
+Pseudo-code processing blocks 
+</ TASK><RESULT>
+Expected outcome
+</RESULT> <USER DATA>
+Input variables 
+</USER DATA>
+
+<reasoning model>
+// Copy the full model here
+</reasoning model>
+```
+
+
+### How can I contribute to the RI Reasoning Model?
+
+Interested in contributing? Check out [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on adding your own version of the model.
+
 
 ### What license governs this project?
 
@@ -45,11 +86,14 @@ This project is released under the **CC BY 4.0 with Ethical Supplement**, which 
 
 See the [LICENSE.md](LICENSE.md) file for complete details on permissions and restrictions.
 
-### How can I contribute to the RI Reasoning Model?
+### What does the Ethical Supplement mean for this project?
 
-Interested in contributing? Check out [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines on adding your own version of the model.
+The ethical supplement to license explicitly prohibits:
+- Military or weapons-related applications
+- Discriminatory systems or mass surveillance
+- Implementations that may cause physical or psychological harm
 
-###   What Principles Underlie the Model?
+### What Principles Underlie the Model?
 
 The RI Reasoning Model is built on three "AI as a Partner" principles:
 
@@ -58,14 +102,6 @@ The RI Reasoning Model is built on three "AI as a Partner" principles:
 2. **Cognitive Autonomy**: AI should explain its reasoning and respect users' rights to risk and creative freedom by encouraging independent critical thinking.
    
 3. **Proactive Approach**: AI should not blindly obey and ask questions, encouraging users to reason for themselves and protecting them from harmful actions.
-
-
-### What does the Ethical Supplement mean for this project?
-
-The ethical supplement to license explicitly prohibits:
-- Military or weapons-related applications
-- Discriminatory systems or mass surveillance
-- Implementations that may cause physical or psychological harm
 
 ### Can I use the images in this repository, and under what terms?
 
@@ -80,6 +116,3 @@ If you're interested in collaborating or have questions:
 - GitHub Issues: For bug reports and feature discussions
 
 **Join the project!** Whether you're a researcher, developer, or AI enthusiast, there's a place for your perspective in shaping the future of human-AI collaboration. Let's build AI that thinks *with* you, not *for* you.
-
-© Yura Turivny, 2025
-
