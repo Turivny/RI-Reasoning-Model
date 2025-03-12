@@ -29,7 +29,7 @@ The RI Reasoning Model is built on three fundamental principles:
 
 ## Versions
 
-- **[RI-Reasoning-Model-v1.5.0-turivny](./model/RI-Reasoning-Model-v1.5.0-turivny)**
+- **[RI-Reasoning-Model-v1.5.0-turivny](./model/RI-Reasoning-Model-v1.5.0-turivny.md)**
 
   Initial release of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration.
 
