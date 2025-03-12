@@ -36,8 +36,6 @@ The RI Reasoning Model is built on three fundamental principles:
 
 5. **Collaborative Partnership**: Rather than positioning itself as an authority, the model functions as a genuine thinking partner.
 
-![Sample Image](./images/tmp8bfhhtw5.png)   
-
 # Architecture: **INITIALIZE_CONTEXT**
 
 On INITIALIZE_CONTEXT step model constructs a comprehensive "hypergraph" – a sophisticated network of relationships that goes beyond simple keyword matching. This multidimensional framework allows the model to:
@@ -262,9 +260,6 @@ The METACOGNITIVE_INTERFACE functions as the collaborative bridge between human 
    - Facilitating understanding that transcends what either could develop alone
    - Inviting deeper exploration through contextual questions
    - Creating solutions that evolve through collaborative dialogue
-  
-
-![Sample Image](./images/tmpgdj5n2_k.png)   
 
 
 # FAQ
