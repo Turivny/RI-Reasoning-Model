@@ -27,9 +27,9 @@ Getting started with the RI Reasoning Model is straightforward:
   ```
   [Your query here]
   
-  <reasoning model>
+  <REASONING MODEL>
   // Copy the full model here
-  </reasoning model>
+  </REASONING MODEL>
   ```
   
 - **Customise as needed**: Adjust the parameters to suit your needs for creating a metacognitive AI assistant, or let your LLM handle it based on the task:
@@ -38,11 +38,11 @@ Getting started with the RI Reasoning Model is straightforward:
   
   Could you please configure the parameters for the task: [translate text].
   
-  Return the full pseudo-code of the updated model. You can only change the parameters.
+  Return the FULL updated reasoning model. You can only change the parameters.
   
-  <reasoning model>
+  <REASONING MODEL>
   // Copy the full model here
-  </reasoning model>
+  </REASONING MODEL>
   ```
   
 - **Apply Semantic Logic Programming to any prompt**: Ask the LLM create new prompt based on the RI Reasoning Model. You will be surprised: 
@@ -54,19 +54,19 @@ Getting started with the RI Reasoning Model is straightforward:
   MUST include: computational structures (FOR loops, IF statements, variable calculations) mimicking the reasoning model's pattern. Write actual pseudo-code blocks, not conceptual descriptions. Return prompt as a code block.
   
   Use this structure: 
-  < CONTEXT >
+  <CONTEXT>
   Role and goal 
-  </ CONTEXT> < TASK>
+  </CONTEXT><TASK>
   Pseudo-code processing blocks 
-  </ TASK><RESULT>
+  </TASK><RESULT>
   Expected outcome
-  </RESULT> <USER DATA>
+  </RESULT><USER DATA>
   Input variables 
   </USER DATA>
   
-  <reasoning model>
+  <REASONING MODEL>
   // Copy the full model here
-  </reasoning model>
+  </REASONING MODEL>
   ```
 
 ### How can I contribute to the RI Reasoning Model?
