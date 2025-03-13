@@ -2,9 +2,6 @@
 
 The RI Reasoning Model is a project focused on building AI that enhances human thinking through collaboration. Contributions from anyone interested in advancing this goal are encouraged.
 
-![Sample Image](./images/tmp290kw7yh.png)
-
-
 ## How to Add a Version
 
 1. **Fork the Repository**  
