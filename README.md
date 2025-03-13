@@ -25,7 +25,7 @@ The RI Reasoning Model is built on the **'AI as our Inner Voice’** approach, r
 
 Getting started with the RI Reasoning Model is straightforward:
 
-- **Simple integration**: Add the model as a prefix to your prompts with reasoning-capable LLMs (Claude, DeepSeek, Gemini) to transform their responses:
+- **Simple integration**: Add the model to your prompts with reasoning-capable LLMs (Claude, DeepSeek, Grok, etc.) to transform their responses:
   ```
   [Your query here]
   
