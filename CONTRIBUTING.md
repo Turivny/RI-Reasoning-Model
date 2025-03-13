@@ -23,10 +23,11 @@ The RI Reasoning Model is a project focused on building AI that enhances human t
 
 4. **Update the README**  
    - In [README.md](README.md), under "Versions," add a new entry for your version, including links to both your model description file and your examples file. For example:  
-     - **vX.Y.Z-yourname**
-       - Short description.     
-       - [vX.Y.Z-yourname](model/RI-Reasoning-Model-vX.Y/RI-Reasoning-Model-vX.Y.Z-yourname.md)  
-       - [vX.Y.Z-yourname-examples-language](model/RI-Reasoning-Model-vX.Y/RI-Reasoning-Model-vX.Y.Z-yourname-examples-language.md)
+      - **v1.5.0-turivny**
+         - Initial release of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration.     
+         - [RI-Reasoning-Model-v1.5.0-turivny](./model/RI-Reasoning-Model-v1.5/RI-Reasoning-Model-v1.5.0-turivny.md)
+         - [RI-Reasoning-Model-v1.5.0-turivny-examples-en](./model/RI-Reasoning-Model-v1.5/RI-Reasoning-Model-v1.5.0-turivny-examples-en.md)
+
       
 5. **Submit a Pull Request**  
    - Push the changes and open a pull request. Reviews will be completed within a week.
