@@ -1,7 +1,6 @@
 # Examples
 
-- [RI-Reasoning-Model-v1.5.0-turivny](./model/RI-Reasoning-Model-v1.5/RI-Reasoning-Model-v1.5.0-turivny.md)
-- Testing model: Grok 3 Think
+Testing model: Grok 3 Think
 
 
 ## Personal question
