@@ -13,9 +13,11 @@ The RI Reasoning Model is built on the **'AI as our Inner Voice’** approach, r
 
 ## Versions
 
-- **[RI-Reasoning-Model-v1.5.0-turivny](./model/RI-Reasoning-Model-v1.5.0-turivny.md)** | [Examples](./model/RI-Reasoning-Model-v1.5.0-turivny-examples.md)
-
-  Initial release of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration.
+- **v1.5.0-turivny**
+   - Initial release of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration.     
+   - [RI-Reasoning-Model-v1.5.0-turivny](./model/RI-Reasoning-Model-v1.5/RI-Reasoning-Model-v1.5.0-turivny.md)
+   - [RI-Reasoning-Model-v1.5.0-turivny-examples-en](./model/RI-Reasoning-Model-v1.5/RI-Reasoning-Model-v1.5.0-turivny-examples-en.md)
+      
 
 ## FAQ
 
