@@ -1,8 +1,8 @@
 # The Reflective Intelligence (RI) Reasoning Model
 
-The Reflective Intelligence (RI) Reasoning Model represents a paradigm shift in human-AI collaboration—moving beyond traditional AI interactions toward a true cognitive partnership that amplifies human thinking rather than replacing it.
-
 ![Sample Image](./images/tmpz1ufukqz.png)
+
+The Reflective Intelligence (RI) Reasoning Model represents a paradigm shift in human-AI collaboration—moving beyond traditional AI interactions toward a true cognitive partnership that amplifies human thinking rather than replacing it.
 
 ## Overview
 
