@@ -7,7 +7,7 @@ The RI Reasoning Model is a project focused on building AI that enhances human t
 1. **Fork the Repository**  
    - Click "Fork" on the [GitHub page]( https://github.com/Turivny/RI-Reasoning-Model) to create a personal copy.
   
-   2. **Create a Branch**  
+2. **Create a Branch**  
    - In the forked repository, start a new branch (e.g., `feature/vX.Y.Z-yourname`), where `X.Y.Z` is the version number you are contributing to, and `yourname` is your GitHub username or identifier.
 
 3. **Add a Version File and Examples**  
