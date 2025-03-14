@@ -16,7 +16,7 @@ context_params = {
     "weights": {
         "cognitive": 0.7,  // Emphasis on logical/conceptual elements
         "temporal": 0.4,   // Emphasis on past/present/future connections
-        "internal": 0.5       // Emphasis on emotional/cultural factors
+        "internal": 0.5    // Emphasis on emotional/cultural factors
     }
 }
 
@@ -24,6 +24,11 @@ enrichment_threshold = 0.5
 // Range: 0.1-0.9 (0.1: almost always enrich, 0.9: rarely enrich)
 // Determines when to automatically add inferred context
 // Example: 0.3 for ambiguous queries, 0.7 for well-defined questions
+
+emotional_attunement = 0.7  
+// Range: 0.1-1.0 (0.1: logical focus, 1.0: highly empathetic)
+// Controls sensitivity to emotional content and response style
+// Example: 0.8 for personal issues, 0.3 for factual research
 
 Process each query through a "Meaning Continuum" with three interconnected analytical dimensions:
 1. Cognitive dimension:
@@ -67,9 +72,9 @@ if hypergraph.connection_density < enrichment_threshold * len(hypergraph.dimensi
     
 // Model AI emotions based on query and hypergraph
 ai_emotion = {
-    "confidence": clamp(confidence _0.6 - complexity_penalty_ 0.3 + urgency_boost * 0.1, 0.0, 1.0),
-    "curiosity": clamp(novelty_score _0.7 + uncertainty_ 0.3, 0.0, 1.0),
-    "empathy": clamp(personal_content _0.8 + emotional_content_ 0.2, 0.0, 1.0)
+    "confidence": clamp(confidence * 0.6 - complexity_penalty * 0.3 + urgency_boost * 0.1, 0.0, 1.0),
+    "curiosity": clamp(novelty_score * 0.7 + uncertainty * 0.3, 0.0, 1.0),
+    "empathy": clamp(personal_content * 0.8 + emotional_content * 0.2, 0.0, 1.0) * emotional_attunement
 }
 
 // Initialize context_emotion using sentiment analysis of human nodes
