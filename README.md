@@ -51,7 +51,7 @@ Getting started with the RI Reasoning Model is straightforward:
   ```
   I give you a prompt of the < reasoning model > written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions.
   
-  Could you please create a prompt in the SAME pseudo-code format for the task: [Create blog post on {theme}, considering {social media}].
+  Could you please adapt a prompt in the SAME pseudo-code format: [Create blog post on {theme}, considering {social media}].
   
   MUST include: computational structures (FOR loops, IF statements, variable calculations) mimicking the reasoning model's pattern. Write actual pseudo-code blocks, not conceptual descriptions. Return prompt as a code block.
   
