@@ -1,4 +1,5 @@
-# The Reflective Intelligence (RI) Reasoning Model
+
+![Sample Image](./images/logo/RI-logo-black.svg)
 
 ![Sample Image](./images/tmpz1ufukqz.png)
 
