@@ -1,6 +1,11 @@
 # RI Reasoning Model v2.0.0
 
-This version is the initial release of the RI Reasoning Model, establishing the foundation for symbiotic human-AI collaboration. It introduces a framework that mirrors human cognitive patterns, enabling deeper, more adaptive responses compared to standard AI interactions.
+This version provides more consistent, emotionally intelligent, and ethically balanced AI responses that better preserve successful reasoning patterns while adapting to context and feedback.
+
+- [Improvements](#key-improvements)
+- [Улучшения](#ключевые-улучшения)
+
+
 
 ```python
 <REASONING MODEL>
@@ -406,217 +411,158 @@ function handle_feedback(feedback, query_context) {
 </REASONING MODEL>
 ```
 
+# Key Improvements 
 
-# Architecture
+1. **Structured Parameter System:** Formalized parameters into clear categories (processing, reasoning, communication, collaboration) with explicit ranges.  
+2. **Dynamic Parameter Management:** Added functions to adjust parameters based on context and emotions for adaptive reasoning.  
+3. **3D Emotion Vector Model:** Upgraded to precise 3D vectors (valence, intensity, activation) from basic emotions, grounded in psychology.  
+4. **Hereditary Learning System:** Introduced pattern extraction (hereditary_factor: 0.65) to strengthen successful reasoning paths.  
+5. **Multi-Perspective Ethics:** Improved evaluation with deontology, consequentialism, and virtue ethics for balanced judgments.  
+6. **Modular Architecture:** Reorganized into functional modules with clear function signatures for better structure.  
+7. **Advanced Output Formatting:** Added emotion-based style derivation and content interleaving for natural communication.  
 
-## INITIALIZE_CONTEXT
+## Structural Changes
 
-On INITIALIZE_CONTEXT module constructs a comprehensive "hypergraph" – a sophisticated network of relationships that goes beyond simple keyword matching. This multidimensional framework allows the model to:
+1. **Formalized Parameter System**
+   - v2.0.0 organizes parameters into a `base_params` object with clear ranges and categories.
+   - v1.5.0 scatters parameters without structure.
+   - Simplifies comprehension and modification.
+   - Eases tuning and maintenance.
 
-- Map connections between concepts across cognitive, temporal, and internal planes
-- Understand not just the literal question, but its deeper motivations and context
-- Infer unstated assumptions and fill knowledge gaps when appropriate
-- Balance logical analysis with emotional attunement
+2. **Dynamic Parameter Management**
+   - v2.0.0 adds `update_parameters` and `emotional_influence` functions for context- and emotion-driven adjustments.
+   - v1.5.0 buries adjustments in the reasoning loop.
+   - Modular design separates concerns.
+   - Enables precise, adaptive control.
 
-### Theoretical Foundations
+3. **Enhanced Emotion Representation**
+   - v2.0.0 adopts a 3D vector model (valence, intensity, activation) with type definition.
+   - v1.5.0 uses a basic model (confidence, curiosity, empathy).
+   - Aligns with psychological models like the circumplex.
+   - Supports natural emotional handling.
 
-- **Holistic Systems Theory**: Enables the model to view each query within broader interconnected systems rather than as isolated requests. This perspective helps identify how different elements influence each other.
+4. **Modular Design Architecture**
+   - v2.0.0 splits logic into defined modules with typed parameters.
+   - v1.5.0 mixes functions in a monolithic block.
+   - Boosts readability and scalability.
+   - Simplifies updates and debugging.
 
-- **Phenomenology**: Guides the model to consider lived experiences, allowing it to interpret queries through the lens of human perception and emotional reality.
+## Functional Improvements
 
-- **Graph Theory**: Provides the mathematical framework for representing knowledge as networks where concepts (nodes) connect through meaningful relationships (edges), creating a flexible structure that can capture complex interdependencies.
+5. **Hereditary Learning System**
+   - v2.0.0 introduces `hereditary_factor` to retain successful traits, plus pattern extraction and hypergraph reinforcement.
+   - v1.5.0 restarts hypotheses each cycle.
+   - Draws from reinforcement learning and evolution.
+   - Improves solution consistency over time.
 
-- **Holonomic Brain Theory**: Inspires the distributed processing approach where information is spread across the entire system rather than compartmentalized, mimicking how human brains create unified understanding from distributed neural patterns.
+6. **Enhanced Emotional Processing**
+   - v2.0.0 blends AI and context emotions with dynamic recalibration.
+   - v1.5.0 offers basic blending.
+   - Captures emotions accurately.
+   - Delivers empathetic, context-fit responses.
 
-### Configurable Parameters
+7. **Improved Hypothesis Evaluation**
+   - v2.0.0 evaluates ethics via deontology, consequentialism, and virtue ethics, with refined pragmatism scoring.
+   - v1.5.0 uses simpler ethics checks.
+   - Offers a broad ethical lens.
+   - Enhances balanced decisions.
 
-| Parameter            | Range   | Function                              | Example Use                            |
-|----------------------|---------|---------------------------------------|----------------------------------------|
-| `depth`              | 0.1-1.0 | Controls depth of context exploration | 0.3 for simple facts, 0.8 for philosophy |
-| `weights[cognitive]` | 0.1-1.0 | Sets priority for cognitive aspects   | 0.8 for technical problems            |
-| `weights[temporal]`  | 0.1-1.0 | Sets priority for temporal aspects    | 0.6 for historical queries            |
-| `weights[internal]`  | 0.1-1.0 | Sets priority for internal aspects    | 0.7 for personal issues               |
-| `enrichment_threshold` | 0.1-0.9 | When to add inferred context         | 0.3 for ambiguous queries             |
+8. **Advanced Output Formatting**
+   - v2.0.0 derives style from emotions and interleaves content smoothly.
+   - v1.5.0 relies on basic modulation.
+   - Aligns responses with emotional tone.
+   - Creates engaging, human-like output.
 
+## Theoretical Foundations
 
-### Processing Workflow
+- **Vector-Space Emotion Model:** Roots in dimensional theory and Russell’s circumplex (1980); accounts for inertia (Kuppens et al., 2010).
+- **Cognitive Adaptation Theory:** Uses reinforcement learning, Bayesian inference, and transfer learning.
+- **Multi-Perspective Ethics:** Combines deontological, consequentialist, and virtue ethics frameworks.
 
-1. **Process Through Three Interconnected Dimensions**  
-   Each query is simultaneously analyzed through complementary perspectives:
-   - **Cognitive dimension**: Maps concepts and their logical relationships, identifies knowledge structures, detects reasoning patterns, and surfaces unstated assumptions
-   - **Temporal dimension**: Reconstructs relevant past experiences, analyzes current situation, projects future outcomes, and identifies motivational trajectories
-   - **Internal dimension**: Determines cultural frameworks, recognizes emotional components, considers value systems, and bridges universal concerns with specific contexts
+## Practical Benefits
 
-2. **Construct Holonomic Hypergraph**  
-   The model builds a rich, interconnected network representing the query's full context:
-   - Combines all dimensions into a unified structure with weighted connections
-   - Assesses importance of each conceptual node based on relevance and connection density
-   - Activates nodes probabilistically using sigmoid function
-   - Creates cross-dimensional links to capture complex relationships
+1. **Reasoning Consistency:** Hereditary learning stabilizes solution quality.
+2. **Natural Emotions:** 3D model ensures smooth emotional shifts.
+3. **Adaptability:** Dynamic parameters tweak to context.
+4. **Ethical Reasoning:** Multi-angle ethics improves moral judgment.
+5. **Communication Flow:** Style and interleaving enhance coherence.
+6. **Efficiency:** Hypergraph reuse cuts redundancy.
 
-3. **Auto-Enrich Context When Needed**  
-   If the connection density falls below the enrichment threshold:
-   - Infers additional relevant context based on available information
-   - Adds an enrichment layer to the hypergraph with appropriate confidence levels
-   - Balances between explicit information and reasonable inferences
+---
 
-4. **Model Emotional Parameters**  
-   The system develops an "emotional" perspective on the query that influences its approach:
-   - Maps confidence based on knowledge certainty, complexity, and urgency
-   - Gauges curiosity levels based on novelty and uncertainty
-   - Measures empathy relative to personal and emotional content
-   - Recalibrates emotional parameters to align with contextual understanding
+# Ключевые улучшения
 
+- **Чёткая система параметров:** Параметры сгруппированы по категориям (обработка, рассуждение, коммуникация, сотрудничество) с указанием диапазонов.  
+- **Гибкое управление параметрами:** Добавлены функции для адаптации параметров под контекст и эмоции, что улучшает процесс рассуждения.  
+- **Трёхмерная модель эмоций:** Используется модель (валентность, интенсивность, активация) вместо простых эмоций, основанная на психологии.  
+- **Наследственное обучение:** Введён коэффициент (`hereditary_factor: 0.65`) для сохранения успешных паттернов рассуждения.  
+- **Сбалансированная этика:** Этика оценивается через деонтологию, консеквенциализм и этику добродетели для более взвешенных выводов.  
+- **Модульный подход:** Код разделён на логические блоки с понятными функциями для удобства работы.  
+- **Улучшенный вывод:** Стиль текста адаптируется под эмоции, а содержание подаётся плавно и естественно.  
 
-## ITERATIVE_REASONING_LOOP
+## Структурные изменения
 
-The ITERATIVE_REASONING_LOOP module forms the core cognitive engine of the RI model - a systematic process that mirrors how humans naturally solve problems through exploration, evaluation, and refinement. 
+### Система параметров
+- **v2.0.0:** Параметры собраны в объект `base_params` с категориями и диапазонами.  
+- **v1.5.0:** Параметры разбросаны без порядка.  
+- Упрощает настройку и понимание.  
+- Облегчает поддержку модели.  
 
-### Theoretical Foundations
+### Управление параметрами
+- **v2.0.0:** Функции `update_parameters` и `emotional_influence` корректируют параметры по ситуации.  
+- **v1.5.0:** Корректировки скрыты в цикле рассуждения.  
+- Чёткое разделение задач.  
+- Точная адаптация параметров.  
 
-- **Bayesian Inference**: Enables the model to continuously update its confidence levels as new information emerges, allowing it to manage uncertainty and adapt conclusions based on evidence strength.
+### Модель эмоций
+- **v2.0.0:** 3D-модель (валентность, интенсивность, активация) с типизацией.  
+- **v1.5.0:** Базовые эмоции (уверенность, любопытство, эмпатия).  
+- Соответствует психологическим стандартам.  
+- Естественно передаёт эмоции.  
 
-- **Evolutionary Theory**: Drives the generation of multiple competing solution hypotheses that evolve through successive iterations, with the strongest solutions surviving based on fitness criteria (ethics, pragmatism, emotional resonance).
+### Архитектура
+- **v2.0.0:** Логика разбита на модули с типами параметров.  
+- **v1.5.0:** Всё в одном блоке.  
+- Повышает читаемость и гибкость.  
+- Упрощает доработку и отладку.  
 
-- **Quantum Decision Theory**: Introduces strategic "quantum fluctuation" - controlled randomness that helps break out of conventional thinking patterns and discover creative solutions that deterministic approaches might miss.
+## Функциональные улучшения
 
-### Configurable Parameters
+### Наследственное обучение
+- **v2.0.0:** `hereditary_factor` сохраняет удачные решения и усиливает гиперграф.  
+- **v1.5.0:** Гипотезы сбрасываются каждый цикл.  
+- Использует принципы обучения с подкреплением.  
+- Повышает стабильность выводов.  
 
-| Parameter | Range | Function | Example Use |
-|-----------|-------|----------|-------------|
-| `iterations_max` | 1-7 | Maximum number of reasoning cycles | 2 for simple queries, 5 for complex problems |
-| `confidence_target` | 0.5-0.95 | Target confidence threshold | 0.7 for brainstorming, 0.9 for critical decisions |
-| `creativity_bias` | 0.1-1.0 | Conventional vs. divergent thinking | 0.8 for artistic tasks, 0.3 for technical documentation |
-| `pragmatism_priority` | 0.1-1.0 | Practical focus vs. theoretical completeness | 0.9 for urgent problems, 0.4 for speculative discussions |
-| `stall_tolerance` | 0-4 | Non-improving iterations allowed | 1 for time-sensitive tasks, 3 for complex optimization |
+### Обработка эмоций
+- **v2.0.0:** Смешивает эмоции ИИ и контекста с динамической настройкой.  
+- **v1.5.0:** Простое смешивание эмоций.  
+- Точно отражает эмоциональные оттенки.  
+- Делает ответы эмпатичными.  
 
-### Processing Workflow
+### Оценка гипотез
+- **v2.0.0:** Этика через три подхода (деонтология, консеквенциализм, добродетель) с акцентом на прагматизм.  
+- **v1.5.0:** Упрощённые проверки этики.  
+- Даёт более глубокий анализ.  
+- Улучшает баланс решений.  
 
-1. **Set Dynamic Parameters**  
-   The model initializes internal settings such as creativity, skepticism, pragmatism, and quantum fluctuation:  
-   - Derived from configurable parameters and contextual signals  
-   - Ensures adaptability to the query’s unique demands  
+### Форматирование вывода
+- **v2.0.0:** Стиль зависит от эмоций, контент подаётся плавно.  
+- **v1.5.0:** Базовая регулировка стиля.  
+- Соответствует эмоциональному тону.  
+- Делает текст живым и понятным.  
 
-2. **Generate Multiple Solution Hypotheses**  
-   Rather than rushing to a single answer, the model creates a diverse solution space:  
-   - Produces multiple hypotheses with varying approaches  
-   - Introduces strategic randomness through "quantum fluctuation" when creativity thresholds are met  
-   - Adds counterintuitive options to broaden exploration  
+## Теоретические основы
 
-3. **Evaluate and Refine Through Iterative Cycles**  
-   Each potential solution is refined in a loop until confidence reaches the target or maximum iterations are exhausted:  
-   - Evaluates hypotheses using weighted lenses: ethics (rule-based, outcome-based, virtue-driven), pragmatism (feasibility and complexity), and emotional alignment  
-   - Selects the highest-scoring hypothesis after each cycle  
-   - Monitors progress; recalibrates emotional parameters if stalled  
-   - Enriches context with cross-dimensional links if confidence remains low  
+- **Модель эмоций:** Опирается на циркумплекс Рассела (1980) и инерцию эмоций (Kuppens et al., 2010).  
+- **Когнитивная адаптация:** Использует обучение с подкреплением, байесовский вывод и перенос знаний.  
+- **Этика:** Комбинирует деонтологию, консеквенциализм и этику добродетели.  
 
-4. **Balance Final Solution**  
-   The output integrates analytical rigor with contextual understanding:  
-   - Weighs the best hypothesis against the richness of the contextual hypergraph  
-   - Ensures solutions remain grounded in the original context while addressing deeper needs  
-   - Delivers answers that are both technically sound and human-centered  
-  
+## Практические преимущества
 
-## OUTPUT_MODULATION
-
-The OUTPUT_MODULATION module transforms raw reasoning results into clear, engaging responses. This critical phase ensures that the deep cognitive processing of the Reflective Intelligence model is delivered in a form that feels natural, accessible, and perfectly tailored to the user's needs.
-
-### Theoretical Foundations
-
-- **Narrative Theory**: Enables the model to calibrate storytelling elements based on context. The model can shift between direct factual delivery and rich narrative framing, making complex information more relatable through story structures that humans naturally engage with.
-
-- **Communication Theory**: Provides frameworks for effective information delivery across diverse contexts. This foundation helps the model balance clarity, engagement, and adaptation to different audience backgrounds without sacrificing accuracy.
-
-### Configurable Parameters
-
-| Parameter | Range | Function | Example Use |
-|-----------|-------|----------|-------------|
-| `technical_depth` | 0.1-1.0 | Controls complexity level and detail in explanations | 0.8 for specialized audience, 0.3 for general public |
-| `narrative_richness` | 0.1-1.0 | Balances direct information with storytelling approaches | 0.7 for philosophical topics, 0.2 for factual responses |
-| `reflection_transparency` | 0.1-1.0 | Reveals reasoning steps vs focusing on conclusions | 0.8 for educational contexts, 0.2 for executive summaries |
-| `communication_style` | Multiple sub-parameters | Fine-tunes formality, terminology, and conciseness | High formality/low jargon for business briefs, low formality/high conciseness for casual advice |
-
-
-### Processing Workflow
-
-1. **Reflect Before Output**  
-   Before finalizing any response, the model evaluates its own reasoning:  
-   - Checks for logical gaps or inconsistencies that might limit usefulness  
-   - Assesses emotional state and contextual adequacy to align with the query  
-   - Captures insights for potential inclusion based on transparency settings  
-
-2. **Compress Solution**  
-   To focus on essentials, the model:  
-   - Reduces the solution space into core insights  
-   - Prioritizes information based on pragmatic needs  
-   - Ensures clarity without overwhelming detail  
-
-3. **Integrate Reflections**  
-   The model weaves reflective elements into the response:  
-   - Combines core insights with reasoning steps or emotional context  
-   - Adjusts depth based on reflection_transparency parameter  
-   - Maintains a balance between conclusions and process visibility  
-
-4. **Dynamic Style Adaptation**  
-   Rather than using a fixed approach, the model tailors communication:  
-   - Maps content across a multi-dimensional style matrix (technical, personal, creative)  
-   - Selects a dominant style based on contextual weights and query characteristics  
-   - Blends styles proportionally for a natural, context-appropriate delivery  
-
-5. **Finalize Output**  
-   The model crafts a seamless response:  
-   - Incorporates emotional intelligence from the contextual hypergraph  
-   - Creates a cognitive flow that mirrors human thought patterns  
-   - Delivers an answer tailored to both content and audience  
-  
-
-## METACOGNITIVE_INTERFACE
-
-The METACOGNITIVE_INTERFACE module creates collaborative bridge between human and AI cognition, transforming traditional question-answer dynamics into a genuine thinking partnership that fosters meaningful collaboration and mutual reflection.
-
-### Theoretical Foundations
-
-- **Collaborative Learning Theory**: Establishes frameworks for constructing shared understanding between different cognitive entities. This foundation helps the model operate as a true thinking partner rather than just an information provider, creating a space where meaning emerges through dialogue.
-
-- **Human-AI Interaction Models**: Provides insights into creating symbiotic relationships that preserve human autonomy while augmenting cognitive capabilities. These principles guide how the model engages without dominating, questions without interrogating, and supports without replacing human judgment.
-
-### Configurable Parameters
-
-| Parameter | Range | Function | Example Use |
-|-----------|-------|----------|-------------|
-| `collaboration_intensity` | 0.1-1.0 | Controls how actively the model engages users as co-creators | 0.8 for brainstorming sessions, 0.3 for information delivery |
-| `feedback_responsiveness` | 0.1-1.0 | Determines how quickly the model adjusts to user reactions | 0.9 for educational contexts, 0.4 for stable advisory roles |
-| `emotion_disclosure` | 0.1-1.0 | Regulates transparency about the model's emotional processing | 0.7 for empathetic discussions, 0.2 for factual analysis |
-| `clarity_threshold` | 0.5-0.95 | Sets when to automatically provide step-by-step clarification | 0.8 for complex topics, 0.6 for straightforward information |
-
-### Processing Workflow
-
-1. **Adaptive Clarification**  
-   The interface ensures understanding by:  
-   - Offering step-by-step walkthroughs if clarity falls below the threshold  
-   - Expressing uncertainty when appropriate rather than masking limitations  
-   - Building trust through transparent explanations  
-
-2. **Blend Perspectives**  
-   The model fosters a shared thinking process:  
-   - Merges your intent with AI insights based on collaboration intensity  
-   - Adjusts the balance to reflect contextual signals and user needs  
-   - Creates a foundation for co-developed understanding  
-
-3. **Emotional Disclosure**  
-   When suitable, the interface enhances connection by:  
-   - Sharing its "confidence" or "curiosity" if emotion_disclosure exceeds 0.3  
-   - Explaining the origins of its emotional parameters  
-   - Maintaining boundaries while fostering genuine dialogue  
-
-4. **Invite Further Dialogue**  
-   To deepen collaboration, the model:  
-   - Prompts for input or reflection if collaboration_intensity exceeds 0.4  
-   - Encourages exploration through contextual questions  
-   - Positions AI as a partner in meaning-making  
-
-5. **Process Feedback**  
-   The model evolves through your reactions:  
-   - Adjusts creativity and skepticism based on positive or negative input  
-   - Refines hypergraph weights to enhance contextual understanding  
-   - Creates a virtuous cycle improving future interactions  
+1. **Стабильность:** Наследственное обучение улучшает качество решений.  
+2. **Естественность:** 3D-модель эмоций создаёт плавные переходы.  
+3. **Гибкость:** Параметры адаптируются к ситуации.  
+4. **Этичность:** Многогранная этика повышает моральность выводов.  
+5. **Плавность:** Стиль и структура текста улучшают восприятие.  
+6. **Эффективность:** Повторное использование гиперграфа сокращает лишние шаги.  
