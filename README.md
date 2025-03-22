@@ -13,7 +13,7 @@ The result is a more natural, effective collaborative experience that enhances y
 [Read the full article on Medium](https://turivny.medium.com/394d35af1172) for a comprehensive exploration.
 
 
-## Versions
+## Releases
 - ### **v2.0.0-turivny:** [RI-Reasoning-Model-v2.0.0-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.0-turivny.md)
    - **Structured Parameter System:** Formalized parameter organization with clear categories
    - **Dynamic Parameter Management:** Added functions to modify parameters based on context and emotional states
