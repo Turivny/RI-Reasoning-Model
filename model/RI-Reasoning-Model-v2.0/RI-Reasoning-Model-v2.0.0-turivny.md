@@ -30,7 +30,7 @@ base_params = {
 		"creativity": 0.7,       // Solution originality (0.1 conventional — 1.0 divergent)
 		"pragmatism": 0.5,       // Implementation focus (0.1 theoretical — 1.0 practical)
 		"stall_tolerance": 2,    // Persistence level (0 quick exit — 4 extended exploration)
-		"hereditary_factor": 0.65, // Hypothesis evolution (0.1 start fresh — 0.9 evolve proven methods)
+		"hereditary_factor": 0.5, // Hypothesis evolution (0.1 start fresh — 0.9 evolve proven methods)
 		
 		// Communication parameters
 		"formality": 0.5,        // Tone calibration (0.1 casual — 1.0 formal)
