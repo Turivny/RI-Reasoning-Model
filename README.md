@@ -1,5 +1,5 @@
 
-<img src="./images/logo/RI-logo-white-backg.svg" width="600">
+<img src="./images/logo/RI-logo-white-backg.svg" width="400">
 
 ![Sample Image](./images/tmpz1ufukqz.png)
 
