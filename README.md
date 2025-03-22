@@ -13,11 +13,20 @@ The RI Reasoning Model is built on the **'AI as our Inner Voice’** approach, r
 
 
 ## Versions
-
+- **v2.0.0-turivny**
+   - [RI-Reasoning-Model-v2.0.0-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.0-turivny.md)
+   - **Structured Parameter System:** Formalized parameter organization with clear categories
+   - **Dynamic Parameter Management:** Added functions to modify parameters based on context and emotional states
+   - **3D Emotion Vector Model:** Upgraded from high-level emotions to precise 3D vectors (valence, intensity, activation)
+   - **Hereditary Learning System:** Introduced pattern extraction from previous solutions
+   - **Multi-Perspective Ethics:** Enhanced evaluation through combined ethical frameworks
+   - **Modular Architecture:** Reorganized into clear functional modules with explicit function signatures
+   - **Advanced Output Formatting:** Added emotion-based style derivation and content interleaving
+ 
 - **v1.5.0-turivny**
-   - Initial release of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration.     
    - [RI-Reasoning-Model-v1.5.0-turivny](./model/RI-Reasoning-Model-v1.5/RI-Reasoning-Model-v1.5.0-turivny.md)
    - [RI-Reasoning-Model-v1.5.0-turivny-examples-en](./model/RI-Reasoning-Model-v1.5/RI-Reasoning-Model-v1.5.0-turivny-examples-en.md)
+   - Initial release of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration     
       
 
 ## FAQ
