@@ -2,8 +2,8 @@
 
 This version provides more consistent, emotionally intelligent, and ethically balanced AI responses that better preserve successful reasoning patterns while adapting to context and feedback.
 
-- [Improvements](#key-improvements)
-- [Улучшения](#ключевые-улучшения)
+- [List of improvements EN](#key-improvements)
+- [Список улучшений RU](#ключевые-улучшения)
 
 
 
