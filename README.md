@@ -34,6 +34,8 @@ The result is a more natural, effective collaborative experience that enhances y
 
 Getting started with the RI Reasoning Model is straightforward:
 
+- **Use as custom instructions**: Add to your personal custom instructions settings of LLM like ChatGPT.
+
 - **Simple integration**: Add the model to your prompts with reasoning-capable LLMs (Claude, DeepSeek, Grok, etc.) to transform their responses:
   ```
    [Your query here]
