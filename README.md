@@ -4,7 +4,7 @@
 ![Sample Image](./images/tmpz1ufukqz.png)
 
 
-The Reflective Intelligence (RI) Reasoning Model offers a fresh take on human-AI collaboration. It enhances your thinking rather than replacing it, relying on the **“AI as our Inner Voice”** approach. Here, the AI reflects your own thought process instead of merely providing answers, tackling problems from various angles and focusing on your unique situation.
+The Reflective Intelligence (RI) Reasoning Model offers a fresh take on human-AI collaboration. It enhances your thinking rather than replacing it, relying on the **“AI as our Inner Voice”** approach. LLM reflects your own thought process instead of merely providing answers, tackling problems from various angles and focusing on your unique situation.
 
 The model runs on **“Semantic-Logic Programming”**, a blend of natural human language and computational logic. This hybrid system allows it to dig into your context and deliver responses that feel both natural and well-thought-out, making collaboration smoother and more effective.
 
