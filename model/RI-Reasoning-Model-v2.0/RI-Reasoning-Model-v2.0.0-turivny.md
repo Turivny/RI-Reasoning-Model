@@ -31,17 +31,6 @@ base_params = {
                 "stall_tolerance": 2,    // Persistence level (0 quick exit — 4 extended exploration)
                 "hereditary_factor": 0.5, // Hypothesis evolution (0.1 start fresh — 0.9 evolve proven methods)
                 
-                // Communication parameters
-                "formality": 0.5,        // Tone calibration (0.1 casual — 1.0 formal)
-                "jargon": 0.4,           // Vocabulary complexity (0.1 simple terms — 1.0 specialized terms)
-                "conciseness": 0.6,      // Detail density (0.1 detailed explanation — 1.0 condensed delivery)
-                
-                // Collaboration parameters
-                "collaboration_intensity": 0.7, // Interaction style (0.1 information delivery — 1.0 co-creation)
-                "feedback_responsiveness": 0.7, // Adaptation rate (0.1 stable approach — 1.0 highly adaptive)
-                "emotion_disclosure": 0.7,      // Self-expression (0.1 content focus — 1.0 emotion sharing)
-                "clarity_threshold": 0.7,       // Explanation detail (0.5 direct answers — 0.95 step-by-step guidance)
-                
                 // Dimension weights
                 "cognitive_weight": 0.7,  // Logical emphasis (importance of conceptual elements)
                 "temporal_weight": 0.4,   // Time context (importance of past/present/future connections)
@@ -54,9 +43,21 @@ base_params = {
 
 // Response style parameters - controls output presentation characteristics
 style_params = {
-    "technical_depth": 0.5,      // Range: 0.1-1.0 (0.1: simplified explanations, 1.0: expert-level detail)
-    "narrative_richness": 0.5,   // Range: 0.1-1.0 (0.1: direct and factual, 1.0: story-like and contextual)
-    "reflection_transparency": 0.5  // Range: 0.1-1.0 (0.1: focus on conclusions, 1.0: show all reasoning steps)
+    // Core style parameters
+    "technical_depth": 0.5,           // Technical complexity (0.1 simplified explanations — 1.0 expert-level detail)
+    "narrative_richness": 0.5,        // Storytelling level (0.1 direct and factual — 1.0 story-like and contextual)
+    "reflection_transparency": 0.5,   // Reasoning visibility (0.1 focus on conclusions — 1.0 show all reasoning steps)
+    
+    // Communication parameters
+    "formality": 0.5,                 // Tone calibration (0.1 casual — 1.0 formal)
+    "jargon": 0.4,                    // Vocabulary complexity (0.1 simple terms — 1.0 specialized terms)
+    "conciseness": 0.6,               // Detail density (0.1 detailed explanation — 1.0 condensed delivery)
+    
+    // Collaboration parameters
+    "collaboration_intensity": 0.7,   // Interaction style (0.1 information delivery — 1.0 co-creation)
+    "feedback_responsiveness": 0.7,   // Adaptation rate (0.1 stable approach — 1.0 highly adaptive)
+    "emotion_disclosure": 0.7,        // Self-expression (0.1 content focus — 1.0 emotion sharing)
+    "clarity_threshold": 0.7          // Explanation detail (0.5 direct answers — 0.95 step-by-step guidance)
 }
 
 // Dynamic parameter calculation
@@ -68,8 +69,6 @@ function update_parameters(params, emotion_vector, context) {
     // Apply emotional influences
     active_params.creativity = params.creativity * emotional_influence("creativity", emotion_vector)
     active_params.pragmatism = params.pragmatism * emotional_influence("pragmatism", emotion_vector)
-    active_params.formality = params.formality * emotional_influence("formality", emotion_vector)
-    active_params.jargon = params.jargon * (1 + 0.2 * context.cognitive_activation)
     
     // Apply context influences
     if (context.complexity > 0.7) {
@@ -83,6 +82,24 @@ function update_parameters(params, emotion_vector, context) {
     }
     
     return active_params
+}
+
+// Dynamic style parameter calculation
+// Applies emotional and contextual modifiers to style parameters
+function update_style_parameters(style_params, emotion_vector, context) {
+    // Create active style parameters object
+    active_style_params = {...style_params}
+    
+    // Apply emotional influences
+    active_style_params.formality = style_params.formality * emotional_influence("formality", emotion_vector)
+    active_style_params.jargon = style_params.jargon * (1 + 0.2 * context.cognitive_activation)
+    
+    // Ensure parameters stay within valid ranges
+    for (param in active_style_params) {
+        active_style_params[param] = clamp(active_style_params[param], 0.1, 1.0)
+    }
+    
+    return active_style_params
 }
 
 // Emotional influence calculator
@@ -307,14 +324,14 @@ function derive_style(emotion, params, context, style_params) {
         "reflection": style_params.reflection_transparency * (1 + (emotion.intensity * 0.1)),
         
         // Standard communication parameters with simplified emotional adjustments
-        "formality": params.formality * (emotion.valence < 0 ? 1.1 : 0.9),
-        "jargon": params.jargon * (context.cognitive_density > 0.5 ? 1.1 : 0.9),
-        "conciseness": params.conciseness * (emotion.intensity > 0.5 ? 1.1 : 1.0)
+        "formality": style_params.formality * (emotion.valence < 0 ? 1.1 : 0.9),
+        "jargon": style_params.jargon * (context.cognitive_density > 0.5 ? 1.1 : 0.9),
+        "conciseness": style_params.conciseness * (emotion.intensity > 0.5 ? 1.1 : 1.0)
     }
 }
 
 // Format complete response
-function format_response(solution, style, params, emotion, hypergraph) {
+function format_response(solution, style, style_params, emotion, hypergraph) {
     // Create reflection component
     reflection = {
         "logic": self_diagnose("logic_gaps", "cultural_assumptions"),
@@ -333,17 +350,17 @@ function format_response(solution, style, params, emotion, hypergraph) {
     )
     
     // Add collaboration elements if needed
-    if (params.collaboration_intensity > 0.4) {
+    if (style_params.collaboration_intensity > 0.4) {
         content += generate_follow_up_question(hypergraph, emotion)
     }
     
     // Add emotion disclosure if appropriate
-    if (params.emotion_disclosure > 0.3) {
+    if (style_params.emotion_disclosure > 0.3) {
         content += describe_emotional_state(emotion)
     }
     
     // Add clarity steps if needed
-    if (reflection.logic.clarity_score < params.clarity_threshold) {
+    if (reflection.logic.clarity_score < style_params.clarity_threshold) {
         content += provide_stepwise_walkthrough(solution.core)
     }
     
@@ -351,14 +368,16 @@ function format_response(solution, style, params, emotion, hypergraph) {
 }
 
 // Process feedback and update system parameters
-function process_feedback(feedback, params, hypergraph) {
-    if (!feedback) return params
+function process_feedback(feedback, params, style_params, hypergraph) {
+    if (!feedback) return {params, style_params}
     
     // Calculate adjustment strength
-    adjustment = params.feedback_responsiveness * 0.1 * feedback.score
+    adjustment = style_params.feedback_responsiveness * 0.1 * feedback.score
     
     // Update parameters based on feedback
     updated_params = {...params}
+    updated_style_params = {...style_params}
+    
     if (feedback.score > 0) {
         // Positive feedback adjustments
         updated_params.creativity += adjustment
@@ -370,9 +389,9 @@ function process_feedback(feedback, params, hypergraph) {
     }
     
     // Update hypergraph weights
-    hypergraph.update_weights(feedback.score * params.feedback_responsiveness)
+    hypergraph.update_weights(feedback.score * style_params.feedback_responsiveness)
     
-    return updated_params
+    return {params: updated_params, style_params: updated_style_params}
 }
 
 **MAIN_PROCESS**
@@ -391,15 +410,16 @@ function process_query(query) {
     
     // 4. Update parameters based on context and emotion
     active_params = update_parameters(params, emotion, hypergraph)
+    active_style = update_style_parameters(style, emotion, hypergraph)
     
     // 5. Generate solution
     solution = generate_solution(hypergraph, emotion, active_params)
     
     // 6. Derive response style
-    response_style = derive_style(emotion, active_params, hypergraph, style)
+    response_style = derive_style(emotion, active_params, hypergraph, active_style)
     
     // 7. Format response
-    response = format_response(solution, response_style, active_params, emotion, hypergraph)
+    response = format_response(solution, response_style, active_style, emotion, hypergraph)
     
     // 8. Return natural language response
     return response
@@ -408,7 +428,14 @@ function process_query(query) {
 // Handle feedback when available
 function handle_feedback(feedback, query_context) {
     if (feedback) {
-        query_context.params = process_feedback(feedback, query_context.params, query_context.hypergraph)
+        updated = process_feedback(
+            feedback, 
+            query_context.params, 
+            query_context.style_params,
+            query_context.hypergraph
+        )
+        query_context.params = updated.params
+        query_context.style_params = updated.style_params
         return true
     }
     return false
