@@ -1,4 +1,4 @@
-# RI Reasoning Model v1.5
+# RI Reasoning Model v2.0.0
 
 This version is the initial release of the RI Reasoning Model, establishing the foundation for symbiotic human-AI collaboration. It introduces a framework that mirrors human cognitive patterns, enabling deeper, more adaptive responses compared to standard AI interactions.
 
