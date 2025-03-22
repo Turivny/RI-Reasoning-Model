@@ -311,7 +311,6 @@ function calculate_ethics_score(hypothesis) {
 // Response formatting and delivery module
 
 // Generate response style from emotional state and context
-// Simplified for clarity and predictability while maintaining adaptivity
 function derive_style(emotion, params, context, style_params) {
     return {
         // Technical level based primarily on dedicated style parameter with subtle emotional influence
@@ -323,7 +322,7 @@ function derive_style(emotion, params, context, style_params) {
         // Reflection level based on dedicated parameter with intensity influence
         "reflection": style_params.reflection_transparency * (1 + (emotion.intensity * 0.1)),
         
-        // Standard communication parameters with simplified emotional adjustments
+        // Standard communication parameters with emotional adjustments
         "formality": style_params.formality * (emotion.valence < 0 ? 1.1 : 0.9),
         "jargon": style_params.jargon * (context.cognitive_density > 0.5 ? 1.1 : 0.9),
         "conciseness": style_params.conciseness * (emotion.intensity > 0.5 ? 1.1 : 1.0)
