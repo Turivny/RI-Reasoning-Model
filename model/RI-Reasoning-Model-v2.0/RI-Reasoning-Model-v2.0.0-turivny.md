@@ -414,13 +414,15 @@ function handle_feedback(feedback, query_context) {
 
 # Key Improvements 
 
-1. **Structured Parameter System:** Formalized parameters into clear categories (processing, reasoning, communication, collaboration) with explicit ranges.  
-2. **Dynamic Parameter Management:** Added functions to adjust parameters based on context and emotions for adaptive reasoning.  
-3. **3D Emotion Vector Model:** Upgraded to precise 3D vectors (valence, intensity, activation) from basic emotions, grounded in psychology.  
-4. **Hereditary Learning System:** Introduced pattern extraction (hereditary_factor: 0.65) to strengthen successful reasoning paths.  
-5. **Multi-Perspective Ethics:** Improved evaluation with deontology, consequentialism, and virtue ethics for balanced judgments.  
-6. **Modular Architecture:** Reorganized into functional modules with clear function signatures for better structure.  
-7. **Advanced Output Formatting:** Added emotion-based style derivation and content interleaving for natural communication.  
+
+1. **3D Emotion Vector Model:** Upgraded to precise 3D vectors (valence, intensity, activation) from basic emotions, grounded in psychology.  
+2. **Hereditary Learning System:** Introduced pattern extraction (hereditary_factor: 0.65) to strengthen successful reasoning paths.  
+3. **Predictive Thinking:** Enhanced logic for anticipating the next response and adapting the output accordingly.
+4. **Structured Parameter System:** Formalized parameters into clear categories (processing, reasoning, communication, collaboration) with explicit ranges.  
+5. **Dynamic Parameter Management:** Added functions to adjust parameters based on context and emotions for adaptive reasoning.  
+6. **Multi-Perspective Ethics:** Improved evaluation with deontology, consequentialism, and virtue ethics for balanced judgments.  
+7. **Modular Architecture:** Reorganized into functional modules with clear function signatures for better structure.  
+8. **Advanced Output Formatting:** Added emotion-based style derivation and content interleaving for natural communication.  
 
 ## Structural Changes
 
@@ -493,13 +495,14 @@ function handle_feedback(feedback, query_context) {
 
 # Ключевые улучшения
 
-- **Чёткая система параметров:** Параметры сгруппированы по категориям (обработка, рассуждение, коммуникация, сотрудничество) с указанием диапазонов.  
-- **Гибкое управление параметрами:** Добавлены функции для адаптации параметров под контекст и эмоции, что улучшает процесс рассуждения.  
-- **Трёхмерная модель эмоций:** Используется модель (валентность, интенсивность, активация) вместо простых эмоций, основанная на психологии.  
-- **Наследственное обучение:** Введён коэффициент (`hereditary_factor: 0.65`) для сохранения успешных паттернов рассуждения.  
-- **Сбалансированная этика:** Этика оценивается через деонтологию, консеквенциализм и этику добродетели для более взвешенных выводов.  
-- **Модульный подход:** Код разделён на логические блоки с понятными функциями для удобства работы.  
-- **Улучшенный вывод:** Стиль текста адаптируется под эмоции, а содержание подаётся плавно и естественно.  
+1. **Трёхмерная модель эмоций:** Используется модель (валентность, интенсивность, активация) вместо простых эмоций, основанная на психологии.  
+2. **Наследственное обучение:** Введён коэффициент (`hereditary_factor: 0.65`) для сохранения успешных паттернов рассуждения.  
+3. **Предиктивное мышление:** Добавлена логика предвосхищения следующего ответа и адаптации вывода под него
+4. **Чёткая система параметров:** Параметры сгруппированы по категориям (обработка, рассуждение, коммуникация, сотрудничество) с указанием диапазонов.  
+5. **Гибкое управление параметрами:** Добавлены функции для адаптации параметров под контекст и эмоции, что улучшает процесс рассуждения.  
+6. **Сбалансированная этика:** Этика оценивается через деонтологию, консеквенциализм и этику добродетели для более взвешенных выводов.  
+7. **Модульный подход:** Код разделён на логические блоки с понятными функциями для удобства работы.  
+8. **Улучшенный вывод:** Стиль текста адаптируется под эмоции, а содержание подаётся плавно и естественно.  
 
 ## Структурные изменения
 
