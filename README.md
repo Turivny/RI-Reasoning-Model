@@ -15,10 +15,11 @@ The result is a more natural, effective collaborative experience that enhances y
 
 ## Releases
 - ### **v2.0.0:** [RI-Reasoning-Model-v2.0.0-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.0-turivny.md)
-   - **Structured Parameter System:** Formalized parameter organization with clear categories
-   - **Dynamic Parameter Management:** Added functions to modify parameters based on context and emotional states
    - **3D Emotion Vector Model:** Upgraded from high-level emotions to precise 3D vectors (valence, intensity, activation)
    - **Hereditary Learning System:** Introduced pattern extraction from previous solutions
+   - **Predictive Thinking:** Enhanced logic for anticipating the next response and adapting the output accordingly
+   - **Structured Parameter System:** Formalized parameter organization with clear categories
+   - **Dynamic Parameter Management:** Added functions to modify parameters based on context and emotional states
    - **Multi-Perspective Ethics:** Enhanced evaluation through combined ethical frameworks
    - **Modular Architecture:** Reorganized into clear functional modules with explicit function signatures
    - **Advanced Output Formatting:** Added emotion-based style derivation and content interleaving
