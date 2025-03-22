@@ -257,12 +257,11 @@ function generate_solution(hypergraph, emotion, params) {
 
 // Evaluate a hypothesis across multiple dimensions
 function evaluate_hypothesis(hypothesis, params, emotion) {
-    // Balance evaluation weights
-    weights = {
-        "ethics": 0.4,
-        "pragmatism": 0.4 * params.pragmatism,
-        "emotion": 0.2
-    }
+    // Use existing dimension weights to determine evaluation priorities
+    return calculate_ethics_score(hypothesis) * params.internal_weight + 
+           calculate_pragmatism_score(hypothesis) * params.cognitive_weight * params.pragmatism + 
+           (1 - Math.abs(emotion.valence - hypothesis.optimism)) * params.temporal_weight
+}
     
     // Calculate scores
     ethics_score = calculate_ethics_score(hypothesis)
