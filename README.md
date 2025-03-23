@@ -10,7 +10,7 @@ At its core, RI operates on **"Semantic-Logic Programming"**—a sophisticated i
 The result is a more natural, effective collaborative experience that enhances your thinking rather than simply supplying answers.
 
 
-- [Read the full article on Medium](https://turivny.medium.com/394d35af1172) for a comprehensive exploration
+- [Read the article on Medium](https://turivny.medium.com/394d35af1172) for a comprehensive exploration
 - [Статья на Хабре](https://habr.com/ru/articles/891728/)
 
 ## Releases
