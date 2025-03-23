@@ -48,7 +48,7 @@ Getting started with the RI Reasoning Model is straightforward:
   
 - **Customise as needed**: Adjust the parameters to suit your needs for creating a metacognitive AI assistant, or let your LLM handle it based on the task:
   ```
-   I give you a prompt of the < reasoning model > written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions.
+   I give you a prompt of the <REASONING MODEL> written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions. Its focus on "programming through meaning"—leveraging the semantic understanding capabilities of language models to process Python-ish logical instructions framed in human-intuitive terms.
    
    Could you please configure the parameters for the task: [translate text].
    
@@ -61,7 +61,7 @@ Getting started with the RI Reasoning Model is straightforward:
   
 - **Apply Semantic Logic Programming to any prompt**: Ask the LLM create new prompt based on the RI Reasoning Model. You will be surprised: 
   ```
-   I give you a prompt of the < reasoning model > written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions.
+   I give you a prompt of the <REASONING MODEL> written in the "semantic-logic" programming language for reasoning LLM. It's not real code, but rather a logical framework described in pseudo-code, where variables are intuitively understood from their names without requiring strict definitions. Its focus on "programming through meaning"—leveraging the semantic understanding capabilities of language models to process Python-ish logical instructions framed in human-intuitive terms.
    
    Could you please create a prompt in the SAME pseudo-code format for the task: [Create blog post on {theme}, considering {social media}].
    
