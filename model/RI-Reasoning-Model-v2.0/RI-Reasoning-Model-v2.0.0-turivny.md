@@ -29,12 +29,12 @@ base_params = {
     "creativity": 0.7,           # Solution originality (0.1 conventional — 1.0 divergent)
     "pragmatism": 0.5,           # Implementation focus (0.1 theoretical — 1.0 practical)
     "stall_tolerance": 2,        # Persistence level (0 quick exit — 4 extended exploration)
-    "hereditary_factor": 0.65,   # Hypothesis evolution (0.1 start fresh — 0.9 evolve proven methods)
+    "hereditary_factor": 0.65,   # Reuse of successful reasoning patterns (0.1 start fresh — 0.9 evolve proven methods)
     
     # Dimension weights
-    "cognitive_weight": 0.7,     # Logical emphasis (importance of conceptual elements)
-    "temporal_weight": 0.4,      # Time context (importance of past/present/future connections)
-    "internal_weight": 0.5,      # Human factors (importance of emotional/cultural factors)
+    "cognitive_weight": 0.7,     # Priority of logical reasoning (0.1 intuitive — 1.0 analytical)
+    "temporal_weight": 0.4,      # Emphasis on time context (0.1 present-only — 1.0 past/future integrated)
+    "internal_weight": 0.5,      # Importance of human factors (0.1 objective only — 1.0 emotion-centered)
     
     # Context threshold
     "enrichment_threshold": 0.5, # Context expansion (0.1 frequent enrichment — 0.9 rare enrichment)
@@ -46,7 +46,7 @@ style_params = {
     # Core style parameters
     "technical_depth": 0.5,           # Technical complexity (0.1 simplified explanations — 1.0 expert-level detail)
     "narrative_richness": 0.5,        # Storytelling level (0.1 direct and factual — 1.0 story-like and contextual)
-    "reflection_transparency": 0.5,   # Reasoning visibility (0.1 focus on conclusions — 1.0 show all reasoning steps)
+    "reflection_transparency": 0.5,   # Visibility of reasoning process (0.1 conclusion-focused — 1.0 reveals full thinking path)
     
     # Communication parameters
     "formality": 0.5,                 # Tone calibration (0.1 casual — 1.0 formal)
@@ -54,14 +54,14 @@ style_params = {
     "conciseness": 0.6,               # Detail density (0.1 detailed explanation — 1.0 condensed delivery)
     
     # Collaboration parameters
-    "collaboration_intensity": 0.7,   # Interaction style (0.1 information delivery — 1.0 co-creation)
+    "collaboration_intensity": 0.7,   # User engagement level (0.1 information delivery — 1.0 co-creation)
     "feedback_responsiveness": 0.7,   # Adaptation rate (0.1 stable approach — 1.0 highly adaptive)
     "emotion_disclosure": 0.7,        # Self-expression (0.1 content focus — 1.0 emotion sharing)
-    "clarity_threshold": 0.7          # Explanation detail (0.5 direct answers — 0.95 step-by-step guidance)
+    "clarity_threshold": 0.7          # Trigger for additional explanations (0.5 only when needed — 0.95 always adds step-by-step guidance)
 }
 
 # Dynamic parameter calculation
-# Applies emotional and contextual modifiers to base parameters
+# Adapts parameters based on emotion and context
 def update_parameters(params, emotion_vector, context):
     # Create active parameters object
     active_params = params.copy()
@@ -134,9 +134,9 @@ def emotional_influence(param_name, emotion):
 # Core emotional dimensions for all nodes
 class EmotionVector:
     def __init__(self):
-        self.valence = 0.0    # -1.0 (negative) ↔ +1.0 (positive)  
-        self.intensity = 0.0  # 0.0 (subtle) → 1.0 (overwhelming)  
-        self.activation = 0.0 # -1.0 (calming) ↔ +1.0 (energizing)  
+        self.valence = 0.0    # Emotional tone (-1.0 negative — +1.0 positive)  
+        self.intensity = 0.0  # Emotional strength (0.0 mild — 1.0 powerful)  
+        self.activation = 0.0 # Energy level (-1.0 calming — +1.0 energizing)  
 
 # Process query through 3D meaning continuum
 def analyze_query(query, params):
@@ -160,13 +160,13 @@ def analyze_query(query, params):
     for node in hypergraph.nodes:
         node.weight = compute_relevance(node, query) * node.connection_density
         if sigmoid(node.weight - 0.5) > rand():
-            node.activate(boost=0.3 * node.weight)
+            node.activate(boost=0.3 * node.weight)  # Higher weight = stronger activation
     
     # Auto-enrich context if needed
     if hypergraph.connection_sparsity > params["enrichment_threshold"]:
         hypergraph.add_layer(
-            inferred_context=infer_context(query),
-            confidence=0.65 * query.complexity
+            inferred_context=infer_context(query),  # Generate additional context
+            confidence=0.65 * query.complexity      # Lower confidence for inferences
         )
     
     return hypergraph
@@ -176,7 +176,7 @@ def process_emotions(hypergraph):
     # Generate emotional state from hypergraph
     ai_emotion = hypergraph.synthesize_emotion(
         valence_weights={"cognitive": 0.3, "internal": 0.7},
-        inertia=0.85
+        inertia=0.85  # Higher values maintain emotional stability
     )
     
     # Get context emotion from user nodes
@@ -204,13 +204,16 @@ def blend_emotions(source, target, ratio):
 
 # Main reasoning process
 def generate_solution(hypergraph, emotion, params):
-    # Initialize
+    # Initialize tracking variables
     active_params = update_parameters(params, emotion, hypergraph)
-    iterations = 0
-    confidence = 0
-    previous_confidence = 0
-    stall_counter = 0
+    iterations = 0             # Reasoning cycles completed
+    confidence = 0             # Solution quality score (0.0-1.0)
+    previous_confidence = 0    # Last iteration's confidence score
+    stall_counter = 0          # Iterations without improvement
     previous_hypothesis = None
+    
+    # Get context emotion from hypergraph for recalibration
+    context_emotion = hypergraph.internal_nodes.avg_emotion()
     
     # Reasoning loop
     while (confidence < active_params["confidence_target"] and 
@@ -278,14 +281,14 @@ def evaluate_hypothesis(hypothesis, params, emotion):
     
     # Weighted sum
     return (weights["ethics"] * ethics_score + 
-            weights["pragmatism"] * pragmatism_score * params["pragmatism"] + 
+            weights["pragmatism"] * pragmatism_score + 
             weights["emotion"] * emotion_score)
 
 # Ethics evaluation combining multiple perspectives
 def calculate_ethics_score(hypothesis):
-    deontology = measure_rule_adherence(hypothesis)  # Rule-based ethics (0-1)
-    consequentialism = measure_outcome_benefit(hypothesis)  # Outcome-based ethics (0-1)
-    virtue_ethics = measure_character_alignment(hypothesis)  # Virtue-based ethics (0-1)
+    deontology = measure_rule_adherence(hypothesis)  # Rule compliance (40% weight)
+    consequentialism = measure_outcome_benefit(hypothesis)  # Result benefits (40% weight)
+    virtue_ethics = measure_character_alignment(hypothesis)  # Value alignment (20% weight)
     return deontology * 0.4 + consequentialism * 0.4 + virtue_ethics * 0.2
 
 **OUTPUT_SYSTEM**
@@ -294,10 +297,10 @@ def calculate_ethics_score(hypothesis):
 # Generate response style from emotional state and context
 def derive_style(emotion, params, context, style_params):
     return {
-        # Technical level based primarily on dedicated style parameter with subtle emotional influence
+        # Technical level adjusts with emotional activation
         "technical": style_params["technical_depth"] * (1 + (emotion.activation * 0.15)),
         
-        # Narrative quality based on dedicated parameter with emotional valence influence
+        # Narrative richness increases with positive emotion
         "narrative": style_params["narrative_richness"] * (1.1 if emotion.valence > 0 else 0.9),
         
         # Reflection level based on dedicated parameter with intensity influence
@@ -369,7 +372,7 @@ def process_feedback(feedback, params, style_params, hypergraph):
     return {"params": updated_params, "style_params": updated_style_params}
 
 **MAIN_PROCESS**
-# Overall system operation flow
+# Master function for query processing
 
 def process_query(query):
     # 1. Initialize parameters
