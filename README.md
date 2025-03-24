@@ -15,6 +15,8 @@ The result is a more natural, effective collaborative experience that enhances y
 
 ## Releases
 ### **v2.0:** 
+- [RI-Reasoning-Model-v2.0.1-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.1-turivny.md)
+   - **Optimisation for analytical tasks:** business strategies, information processing, and decision making 
 - [RI-Reasoning-Model-v2.0.0-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.0-turivny.md)
    - **3D Emotion Vector Model:** Upgraded from high-level emotions to precise 3D vectors (valence, intensity, activation)
    - **Hereditary Learning System:** Introduced pattern extraction from previous solutions
