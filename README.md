@@ -30,7 +30,7 @@ The result is a more natural, effective collaborative experience that enhances y
 ### **v1.5:**
 - [RI-Reasoning-Model-v1.5.0-turivny](./model/RI-Reasoning-Model-v1.5/RI-Reasoning-Model-v1.5.0-turivny.md)
    - [RI-Reasoning-Model-v1.5.0-turivny-examples-en](./model/RI-Reasoning-Model-v1.5/RI-Reasoning-Model-v1.5.0-turivny-examples-en.md)
-   - Initial release of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration     
+   - **Initial release** of the RI Reasoning Model, introducing the core framework for symbiotic human-AI collaboration     
       
 
 ## FAQ
