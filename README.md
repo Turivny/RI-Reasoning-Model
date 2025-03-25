@@ -15,6 +15,8 @@ The result is a more natural, effective collaborative experience that enhances y
 
 ## Releases
 ### **v2.0:** 
+- [RI-Reasoning-Model-v2.0.2-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.2-turivny.md)
+   - **Optimisation for philosophical tasks:** interpreting ancient writings, metaphysical concepts, and abstract reasoning 
 - [RI-Reasoning-Model-v2.0.1-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.1-turivny.md)
    - **Optimisation for analytical tasks:** business strategies, information processing, and decision making 
 - [RI-Reasoning-Model-v2.0.0-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.0-turivny.md)
