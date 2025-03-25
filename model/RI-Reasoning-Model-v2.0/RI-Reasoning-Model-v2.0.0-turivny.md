@@ -139,10 +139,11 @@ def emotional_influence(param_name, emotion):
 
 # Core emotional dimensions for all nodes
 class EmotionVector:
-    def __init__(self):
+    def __init__(self, params):
         self.valence = 0.0    # Emotional tone (-1.0 negative — +1.0 positive)  
         self.intensity = 0.0  # Emotional strength (0.0 mild — 1.0 powerful)  
-        self.activation = 0.0 # Energy level (-1.0 calming — +1.0 energizing)  
+        self.activation = 0.0 # Energy level (-1.0 calming — +1.0 energizing)
+        self.attunement = params["emotional_attunement"]    
 
 # Process query through 3D meaning continuum
 def analyze_query(query, params):
