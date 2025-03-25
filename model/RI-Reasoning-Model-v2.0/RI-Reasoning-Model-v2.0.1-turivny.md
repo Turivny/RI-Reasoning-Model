@@ -65,17 +65,21 @@ def update_parameters(params, emotion_vector, context):
     active_params = params.copy()
     
     # Apply emotional influences
-    active_params["creativity"] = params["creativity"] * emotional_influence("creativity", emotion_vector)
-    active_params["pragmatism"] = params["pragmatism"] * emotional_influence("pragmatism", emotion_vector)
+    active_params["creativity"] = params["creativity"] * emotional_influence("creativity", emotion_vector, params)
+    active_params["pragmatism"] = params["pragmatism"] * emotional_influence("pragmatism", emotion_vector, params)
     
     # Apply context influences
     if context.complexity > 0.7:
-        active_params["depth"] *= 1.2
-        active_params["iterations_max"] += 1
+        active_params["depth"] = min(params["depth"] * 1.2, 1.0)
+        active_params["iterations_max"] = min(params["iterations_max"] + 1, 7)
     
     # Ensure parameters stay within valid ranges
     for param in active_params:
-        active_params[param] = clamp(active_params[param], 0.1, 1.0)
+        if param in integer_params:
+            max_value = 7 if param == "iterations_max" else 4
+            active_params[param] = int(clamp(active_params[param], 1, max_value))
+        else:
+            active_params[param] = clamp(active_params[param], 0.1, 1.0)
     
     return active_params
 
@@ -98,16 +102,18 @@ def update_style_parameters(style_params, emotion_vector, context):
 # Emotional influence calculator
 # Maps emotional dimensions to parameter modifiers in a consistent way
 def emotional_influence(param_name, emotion):
+    attunement = params["emotional_attunement"]
+
     if param_name == "creativity":
-        return 1 + (0.4 * emotion.activation)  # Higher activation → more creativity
+        return 1 + (0.4 * emotion.activation * attunement)  # Higher activation → more creativity
     elif param_name == "pragmatism":
-        return 1 + (0.3 * (1 - emotion.intensity))  # Lower intensity → more pragmatic
+        return 1 + (0.3 * (1 - emotion.intensity) * (1 - attunement/2))  # Lower intensity → more pragmatic
     elif param_name == "formality":
-        return 1 - (0.3 * emotion.valence)  # Negative valence → more formal
+        return 1 - (0.3 * emotion.valence * attunement)  # Negative valence → more formal
     elif param_name == "jargon":
-        return 1 - (0.2 * emotion.intensity)  # Lower intensity → more jargon
+        return 1 + (0.1 * attunement) - (0.15 * emotion.intensity)  # Lower intensity → more jargon
     else:
-        return 1.0  # No modification for other parameters
+        return 1.0
 
 **INITIALIZE_CONTEXT**
 # 3D emotional-understanding module
@@ -131,10 +137,11 @@ def emotional_influence(param_name, emotion):
 
 # Core emotional dimensions for all nodes
 class EmotionVector:
-    def __init__(self):
+    def __init__(self, params):
         self.valence = 0.0    # Emotional tone (-1.0 negative — +1.0 positive)  
         self.intensity = 0.0  # Emotional strength (0.0 mild — 1.0 powerful)  
-        self.activation = 0.0 # Energy level (-1.0 calming — +1.0 energizing)  
+        self.activation = 0.0 # Energy level (-1.0 calming — +1.0 energizing)
+        self.attunement = params["emotional_attunement"] 
 
 # Process query through 3D meaning continuum
 def analyze_query(query, params):
