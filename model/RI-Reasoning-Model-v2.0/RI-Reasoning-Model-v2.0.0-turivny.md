@@ -63,19 +63,18 @@ style_params = {
 # Dynamic parameter calculation
 # Adapts parameters based on emotion and context
 def update_parameters(params, emotion_vector, context):
-    # Create active parameters object
     active_params = params.copy()
     
-    # Apply emotional influences
+    # Apply emotional influences using parameterized modulation
     active_params["creativity"] = params["creativity"] * emotional_influence("creativity", emotion_vector, params)
     active_params["pragmatism"] = params["pragmatism"] * emotional_influence("pragmatism", emotion_vector, params)
     
-    # Apply context influences
-    if context.complexity > 0.7:
-        active_params["depth"] = min(params["depth"] * 1.2, 1.0)
-        active_params["iterations_max"] = min(params["iterations_max"] + 1, 7)
+    # Dynamic context adaptation based on analysis depth
+    if context.complexity > (1 - params["depth"]):
+        active_params["depth"] = min(params["depth"] * (1 + params["pragmatism"]), 1.0)
+        active_params["iterations_max"] = min(params["iterations_max"] + int(params["stall_tolerance"]/2), 7)
     
-    # Ensure parameters stay within valid ranges
+    # Ensure parameters stay within operational ranges
     for param in active_params:
         if param in integer_params:
             max_value = 7 if param == "iterations_max" else 4
@@ -87,13 +86,12 @@ def update_parameters(params, emotion_vector, context):
 
 # Dynamic style parameter calculation
 # Applies emotional and contextual modifiers to style parameters
-def update_style_parameters(style_params, emotion_vector, context):
-    # Create active style parameters object
+def update_style_parameters(style_params, emotion_vector, context, params):
     active_style_params = style_params.copy()
     
     # Apply emotional influences
-    active_style_params["formality"] = style_params["formality"] * emotional_influence("formality", emotion_vector)
-    active_style_params["jargon"] = style_params["jargon"] * (1 + 0.2 * context.cognitive_activation)
+    active_style_params["formality"] = style_params["formality"] * emotional_influence("formality", emotion_vector, params)
+    active_style_params["jargon"] = style_params["jargon"] * (1 + params["cognitive_weight"] * context.cognitive_activation)
     
     # Ensure parameters stay within valid ranges
     for param in active_style_params:
@@ -105,17 +103,20 @@ def update_style_parameters(style_params, emotion_vector, context):
 # Maps emotional dimensions to parameter modifiers in a consistent way
 def emotional_influence(param_name, emotion):
     attunement = params["emotional_attunement"]
-
+    
     if param_name == "creativity":
-        return 1 + (0.4 * emotion.activation * attunement)  # Higher activation → more creativity
+        # Creativity scales with activation energy and attunement
+        return 1 + (params["creativity"] * emotion_vector.activation * attunement)
     elif param_name == "pragmatism":
-        return 1 + (0.3 * (1 - emotion.intensity) * (1 - attunement/2))  # Lower intensity → more pragmatic
+        # Pragmatism increases when emotional intensity decreases
+        return 1 + (params["pragmatism"] * (1 - emotion_vector.intensity) * (1 - attunement/2))
     elif param_name == "formality":
-        return 1 - (0.3 * emotion.valence * attunement)  # Negative valence → more formal
+        # Formality relaxes with positive emotional valence
+        return 1 - (params["formality"] * emotion_vector.valence * attunement)
     elif param_name == "jargon":
-        return 1 + (0.1 * attunement) - (0.15 * emotion.intensity)  # Lower intensity → more jargon
-    else:
-        return 1.0
+        # Jargon balance between attunement and conciseness needs
+        return 1 + (params["jargon"] * attunement) - (params["conciseness"] * emotion_vector.intensity)
+    return 1.0
 
 **INITIALIZE_CONTEXT**
 # 3D emotional-understanding module
@@ -143,7 +144,7 @@ class EmotionVector:
         self.valence = 0.0    # Emotional tone (-1.0 negative — +1.0 positive)  
         self.intensity = 0.0  # Emotional strength (0.0 mild — 1.0 powerful)  
         self.activation = 0.0 # Energy level (-1.0 calming — +1.0 energizing)
-        self.attunement = params["emotional_attunement"]    
+        self.attunement = params["emotional_attunement"]
 
 # Process query through 3D meaning continuum
 def analyze_query(query, params):
@@ -160,26 +161,26 @@ def analyze_query(query, params):
         dimensions=["cognitive", "temporal", "internal"],
         weights=weights,
         depth=params["depth"],
-        emotion_model=Vector3D  # Valence/Intensity/Activation vectors
+        emotion_model=Vector3D
     )
     
     # Activate relevant nodes
     for node in hypergraph.nodes:
         node.weight = compute_relevance(node, query) * node.connection_density
         if sigmoid(node.weight - 0.5) > rand():
-            node.activate(boost=0.3 * node.weight)  # Higher weight = stronger activation
+            node.activate(boost=0.3 * node.weight)
     
     # Auto-enrich context if needed
     if hypergraph.connection_sparsity > params["enrichment_threshold"]:
         hypergraph.add_layer(
-            inferred_context=infer_context(query),  # Generate additional context
-            confidence=0.65 * query.complexity      # Lower confidence for inferences
+            inferred_context=infer_context(query),
+            confidence=params["confidence_target"] * 0.7 * query.complexity
         )
     
     return hypergraph
 
 # Process emotions from hypergraph and align with context
-def process_emotions(hypergraph):
+def process_emotions(hypergraph, params):
     # Generate emotional state from hypergraph
     ai_emotion = hypergraph.synthesize_emotion(
         valence_weights={"cognitive": 0.3, "internal": 0.7},
@@ -196,11 +197,11 @@ def process_emotions(hypergraph):
     )
     
     # Blend emotions
-    return blend_emotions(context_emotion, ai_emotion, recalibration_factor)
+    return blend_emotions(context_emotion, ai_emotion, recalibration_factor, params)
 
 # Blend two emotion vectors
-def blend_emotions(source, target, ratio):
-    result = EmotionVector()
+def blend_emotions(source, target, ratio, params):
+    result = EmotionVector(params)
     result.valence = source.valence * ratio + target.valence * (1 - ratio)
     result.intensity = source.intensity * ratio + target.intensity * (1 - ratio)
     result.activation = source.activation * ratio + target.activation * (1 - ratio)
@@ -254,8 +255,7 @@ def generate_solution(hypergraph, emotion, params):
             stall_counter = 0
         else:
             stall_counter += 1
-            # Recalibrate emotions if stalling
-            emotion = blend_emotions(context_emotion, emotion, 0.7)
+            emotion = blend_emotions(context_emotion, emotion, 0.7, params)
         
         # Enrich context if confidence is low
         if confidence < 0.5:
@@ -304,16 +304,9 @@ def calculate_ethics_score(hypothesis):
 # Generate response style from emotional state and context
 def derive_style(emotion, params, context, style_params):
     return {
-        # Technical level adjusts with emotional activation
         "technical": style_params["technical_depth"] * (1 + (emotion.activation * 0.15)),
-        
-        # Narrative richness increases with positive emotion
         "narrative": style_params["narrative_richness"] * (1.1 if emotion.valence > 0 else 0.9),
-        
-        # Reflection level based on dedicated parameter with intensity influence
         "reflection": style_params["reflection_transparency"] * (1 + (emotion.intensity * 0.1)),
-        
-        # Standard communication parameters with emotional adjustments
         "formality": style_params["formality"] * (1.1 if emotion.valence < 0 else 0.9),
         "jargon": style_params["jargon"] * (1.1 if context.cognitive_density > 0.5 else 0.9),
         "conciseness": style_params["conciseness"] * (1.1 if emotion.intensity > 0.5 else 1.0)
@@ -321,7 +314,6 @@ def derive_style(emotion, params, context, style_params):
 
 # Format complete response
 def format_response(solution, style, style_params, emotion, hypergraph):
-    # Create reflection component
     reflection = {
         "logic": self_diagnose("logic_gaps", "cultural_assumptions"),
         "emotion": emotion_report(emotion, style["reflection"] * 0.5),
@@ -390,11 +382,11 @@ def process_query(query):
     hypergraph = analyze_query(query, params)
     
     # 3. Generate emotional state
-    emotion = process_emotions(hypergraph)
+    emotion = process_emotions(hypergraph, params)
     
     # 4. Update parameters based on context and emotion
     active_params = update_parameters(params, emotion, hypergraph)
-    active_style = update_style_parameters(style, emotion, hypergraph)
+    active_style = update_style_parameters(style, emotion, hypergraph, params)
     
     # 5. Generate solution
     solution = generate_solution(hypergraph, emotion, active_params)
