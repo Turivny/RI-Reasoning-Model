@@ -15,10 +15,30 @@ The result is a more natural, effective collaborative experience that enhances y
 
 ## Releases
 ### **v2.0:** 
+- [RI-Reasoning-Model-v2.0.3-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.3-turivny.md)
+   - **Creative Profile:** Maximizes divergent thinking, intuitive exploration, and the generation of novel ideas and unconventional solutions.
+   - Core Strengths: Novelty, divergence, intuition, association, brainstorming, reframing.
+   - Task examples:
+      - Brainstorming new concepts (names, slogans, etc.)
+      - Generating story or artistic ideas
+      - Finding unconventional approaches to problems
+      - Creative writing & ideation
 - [RI-Reasoning-Model-v2.0.2-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.2-turivny.md)
-   - **Optimisation for philosophical tasks:** interpreting ancient writings, metaphysical concepts, and abstract reasoning 
+   - **Philosophical Profile:** Designed for in-depth exploration of abstract concepts, interpretation of complex meanings, and understanding underlying contexts or theories.
+   - Core Strengths: Depth, abstraction, context, interpretation, nuance, exploring multiple perspectives.
+   - Task Examples:
+     - Interpreting complex texts or ideas
+     - Analyzing arguments & perspectives
+     - Exploring ethical considerations
+     - Developing conceptual frameworks
 - [RI-Reasoning-Model-v2.0.1-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.1-turivny.md)
-   - **Optimisation for analytical tasks:** business strategies, information processing, and decision making 
+   - **Analytical Profile:** Optimized for logical reasoning, precision, and structured analysis to derive clear, objective insights.
+   - Core Strengths: Precision, logic, structure, objectivity, systematic processing.
+   - Task Examples:
+      - Analyzing data or reports
+      - Problem-solving & troubleshooting
+      - Precise text editing or fact-checking
+      - Process evaluation & optimization
 - [RI-Reasoning-Model-v2.0.0-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.0-turivny.md)
    - **3D Emotion Vector Model:** Upgraded from high-level emotions to precise 3D vectors (valence, intensity, activation)
    - **Hereditary Learning System:** Introduced pattern extraction from previous solutions
