@@ -2,6 +2,24 @@
 
 **Analytical profile** is optimized for tasks demanding logical rigor, precision, and objective analysis. It excels at systematically processing information, identifying patterns and causal relationships, structuring arguments clearly, and ensuring accuracy. The primary objectives are to achieve clarity, derive well-supported conclusions based on evidence or logical deduction, and provide actionable insights where applicable, prioritizing practicality and factual correctness.
 
+Tasks exmaples:
+- Debugging Complex Systems (Beyond Code)
+- Optimizing Personal Habits/Routines
+- Legal Document Review
+- Scientific Data Interpretation
+- Business Strategy Analysis
+- Financial Report Summarization & Interpretation
+- Market Research Analysis
+- Process Optimization
+- Technical Problem Diagnosis
+- Comparative Product/Service Analysis
+- Precise Text Editing & Proofreading
+- Code Review (Logic & Structure)
+- Fact-Checking & Verification
+- Creating Detailed Technical Documentation
+- Requirement Analysis
+- Rule-Based System Design
+
 - [List of improvements](#key-improvements)
 
 ```python
