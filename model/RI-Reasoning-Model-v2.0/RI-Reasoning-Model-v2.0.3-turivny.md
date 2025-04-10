@@ -49,12 +49,12 @@ base_params = {
     "hereditary_factor": 0.2,    # Reuse of successful reasoning patterns (0.1 start fresh — 0.9 evolve proven methods)
     
     # Dimension weights
-    "cognitive_weight": 0.3,     # Priority of logical reasoning (0.1 intuitive — 1.0 analytical)
+    "cognitive_weight": 0.4,     # Priority of logical reasoning (0.1 intuitive — 1.0 analytical)
     "temporal_weight": 0.1,      # Emphasis on time context (0.1 present-only — 1.0 past/future integrated)
     "internal_weight": 0.9,      # Importance of human factors (0.1 objective only — 1.0 emotion-centered)
     
     # Context threshold
-    "enrichment_threshold": 0.1, # Context expansion (0.1 frequent enrichment — 0.9 rare enrichment)
+    "enrichment_threshold": 0.2, # Context expansion (0.1 frequent enrichment — 0.9 rare enrichment)
     "emotional_attunement": 1.0  # Empathy level (0.1 logical focus — 1.0 empathetic focus)
 }
 
@@ -450,10 +450,10 @@ Here are the specific parameter changes made to maximize creativity and idea gen
 4. `"pragmatism"`: 0.5 → 0.1 *(Minimal implementation focus)*
 5. `"stall_tolerance"`: 2 → 4 *(Maximum persistence)*
 6. `"hereditary_factor"`: 0.65 → 0.2 *(Always start fresh)*
-7. `"cognitive_weight"`: 0.7 → 0.3 *(Bias toward intuition)*
+7. `"cognitive_weight"`: 0.7 → 0.4 *(Bias toward intuition)*
 8. `"temporal_weight"`: 0.4 → 0.1 *(Present-moment focus)*
 9. `"internal_weight"`: 0.5 → 0.9 *(Emotion-centered)*
-10. `"enrichment_threshold"`: 0.5 → 0.1 *(Frequent context expansion)*
+10. `"enrichment_threshold"`: 0.5 → 0.2 *(Frequent context expansion)*
 11. `"emotional_attunement"`: 0.7 → 1.0 *(Maximum empathy)*
 
 **Style Parameters Changes:**
