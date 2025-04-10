@@ -37,7 +37,7 @@ The result is a more natural, effective collaborative experience that enhances y
    - Task Examples:
       - Analyzing data or reports
       - Problem-solving & troubleshooting
-      - Precise text editing or fact-checking
+      - Fact-checking
       - Process evaluation & optimization
 - [RI-Reasoning-Model-v2.0.0-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.0-turivny.md)
    - **3D Emotion Vector Model:** Upgraded from high-level emotions to precise 3D vectors (valence, intensity, activation)
