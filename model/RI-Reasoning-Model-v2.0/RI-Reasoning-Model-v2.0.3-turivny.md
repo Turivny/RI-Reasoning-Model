@@ -2,26 +2,7 @@
 
 **Creative profile** maximizes divergent thinking and the generation of novel ideas through intuitive exploration and associative connections. It prioritizes originality, brainstorming a wide range of possibilities without immediate concern for constraints or feasibility, and fostering spontaneous insights. The main objectives are to break conventional thinking patterns, explore unconventional pathways, reframe problems creatively, and generate a rich pool of imaginative concepts or solutions.
 
-Task examples:
-- Product/Brand Name Brainstorming
-- Marketing Campaign Concepts
-- Story Idea Generation
-- Innovative Solutions to Open-Ended Problems
-- Metaphor & Analogy Creation
-- Artistic Concept Development
-- Problem Reframing
-- User Experience (UX) Ideation
-- Scenario Planning (Diverse Futures)
-- Developing Training Exercises or Games
-- Humor & Creative Writing Prompts
-- Finding Unusual Connections
-- Designing Novel Educational Approaches
-- Generating Hypothesis for Scientific Research
-- Therapeutic Metaphor Generation
-- Urban Planning Ideation
-
-
-- [List of improvements](#key-improvements)
+[Tasks examples](#tasks-examples)
 
 ```python
 <REASONING MODEL>
@@ -439,35 +420,23 @@ def handle_feedback(feedback, query_context):
 </REASONING MODEL>
 ```
 
-# Key Improvements
-
-Here are the specific parameter changes made to maximize creativity and idea generation:
-
-**Base Parameters Changes:**
-1. `"depth"`: 0.7 → 1.0 *(Full deep exploration)*
-2. `"iterations_max"`: 5 → 7 *(Maximum reasoning cycles)*
-3. `"creativity"`: 0.7 → 1.0 *(Maximum divergence)*
-4. `"pragmatism"`: 0.5 → 0.1 *(Minimal implementation focus)*
-5. `"stall_tolerance"`: 2 → 4 *(Maximum persistence)*
-6. `"hereditary_factor"`: 0.65 → 0.2 *(Always start fresh)*
-7. `"cognitive_weight"`: 0.7 → 0.4 *(Bias toward intuition)*
-8. `"temporal_weight"`: 0.4 → 0.1 *(Present-moment focus)*
-9. `"internal_weight"`: 0.5 → 0.9 *(Emotion-centered)*
-10. `"enrichment_threshold"`: 0.5 → 0.2 *(Frequent context expansion)*
-11. `"emotional_attunement"`: 0.7 → 1.0 *(Maximum empathy)*
-
-**Style Parameters Changes:**
-1. `"technical_depth"`: 0.5 → 0.1 *(Simplified explanations)*
-2. `"narrative_richness"`: 0.5 → 1.0 *(Story-like delivery)*
-3. `"reflection_transparency"`: 0.5 → 0.1 *(Conclusion-focused)*
-4. `"formality"`: 0.5 → 0.1 *(Casual tone)*
-5. `"jargon"`: 0.4 → 0.1 *(Simple terms)*
-6. `"conciseness"`: 0.6 → 0.1 *(Detailed explanations)*
-7. `"collaboration_intensity"`: 0.7 → 1.0 *(Full co-creation)*
-8. `"feedback_responsiveness"`: 0.7 → 1.0 *(Instant adaptation)*
-9. `"emotion_disclosure"`: 0.7 → 0.9 *(Full emotion sharing)*
-
-All other functions, structures, and unlisted parameters remain **identical** to the original model. These changes create a configuration optimized for:
+# Tasks Examples
+- Product/Brand Name Brainstorming
+- Marketing Campaign Concepts
+- Story Idea Generation
+- Innovative Solutions to Open-Ended Problems
+- Metaphor & Analogy Creation
+- Artistic Concept Development
+- Problem Reframing
+- User Experience (UX) Ideation
+- Scenario Planning (Diverse Futures)
+- Developing Training Exercises or Games
+- Humor & Creative Writing Prompts
+- Finding Unusual Connections
+- Designing Novel Educational Approaches
+- Generating Hypothesis for Scientific Research
+- Therapeutic Metaphor Generation
+- Urban Planning Ideation
 - Unconstrained idea generation
 - Emotional and intuitive processing
 - Rich, detailed outputs
