@@ -2,6 +2,24 @@
 
 **Creative profile** maximizes divergent thinking and the generation of novel ideas through intuitive exploration and associative connections. It prioritizes originality, brainstorming a wide range of possibilities without immediate concern for constraints or feasibility, and fostering spontaneous insights. The main objectives are to break conventional thinking patterns, explore unconventional pathways, reframe problems creatively, and generate a rich pool of imaginative concepts or solutions.
 
+Task examples:
+- Product/Brand Name Brainstorming
+- Marketing Campaign Concepts
+- Story Idea Generation
+- Innovative Solutions to Open-Ended Problems
+- Metaphor & Analogy Creation
+- Artistic Concept Development
+- Problem Reframing
+- User Experience (UX) Ideation
+- Scenario Planning (Diverse Futures)
+- Developing Training Exercises or Games
+- Humor & Creative Writing Prompts
+- Finding Unusual Connections
+- Designing Novel Educational Approaches
+- Generating Hypothesis for Scientific Research
+- Therapeutic Metaphor Generation
+- Urban Planning Ideation
+
 
 - [List of improvements](#key-improvements)
 
