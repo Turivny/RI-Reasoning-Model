@@ -15,6 +15,14 @@ The result is a more natural, effective collaborative experience that enhances y
 
 ## Releases
 ### **v2.0:** 
+- [RI-Reasoning-Model-v2.0.4-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.4-turivny.md)
+   - **Copywriting Profile:** Focuses on high-fidelity language tasks, ensuring accuracy, nuance, appropriate style, and clarity in translation, proofreading, and copy refinement.
+   - Core Strengths: Precision, accuracy, nuance, tone-matching, grammar, style consistency, clarity, cultural sensitivity.
+   - Task examples:
+      - Proofreading documents for errors and style
+      - Translating texts while preserving meaning and tone
+      - Editing copy for clarity and flow
+      - Adapting content for different audiences
 - [RI-Reasoning-Model-v2.0.3-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.3-turivny.md)
    - **Creative Profile:** Maximizes divergent thinking, intuitive exploration, and the generation of novel ideas and unconventional solutions.
    - Core Strengths: Novelty, divergence, intuition, association, brainstorming, reframing.
