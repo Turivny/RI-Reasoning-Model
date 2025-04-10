@@ -421,7 +421,7 @@ def handle_feedback(feedback, query_context):
 ```
 
 # Tasks Examples 
-- Debugging Complex Systems (Beyond Code)
+- Debugging Complex Systems (Beyond Code) 
 - Optimizing Personal Habits/Routines
 - Legal Document Review
 - Scientific Data Interpretation
