@@ -1,6 +1,6 @@
 # RI Reasoning Model v2.0.3
 
-**Copywriting profile** is optimized for tasks demanding high fidelity in language use, focusing on precision, nuance, and stylistic appropriateness. It excels at identifying and correcting errors, ensuring grammatical accuracy, maintaining consistency in terminology and style, and faithfully conveying meaning, tone, and cultural context, particularly in translation and editing. The main objectives are to produce polished, clear, and accurate text that adheres to specific guidelines (style guides, brand voice) and effectively communicates the intended message with the appropriate tone and level of detail.
+**Copywriting profile** is optimized for tasks demanding high fidelity in language use, focusing on precision, nuance, and stylistic appropriateness. It excels at identifying and correcting errors, ensuring grammatical accuracy, maintaining consistency in terminology and style, and faithfully conveying meaning, tone, and cultural context, particularly in translation and editing. 
 
 [Tasks examples](#tasks-examples)
 
