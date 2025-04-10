@@ -453,9 +453,3 @@ All other functions, structures, and unlisted parameters remain **identical** to
 - Rich, detailed outputs
 - Collaborative brainstorming
 - Spontaneous creativity over practicality
-
-9. **`emotion_disclosure`: 0.7 → 0.8**  
-   Richer phenomenological expression
-
-10. **`clarity_threshold`: 0.7 → 0.9**  
-    More frequent step-by-step guidance
