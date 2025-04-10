@@ -2,23 +2,10 @@
 
 **Philosophical profile** is designed for deep exploration of abstract concepts, nuanced interpretation, and understanding complex systems of meaning. It focuses on analyzing underlying assumptions, exploring multiple perspectives, considering historical and theoretical contexts, and grappling with questions of value, ethics, and significance. The key objectives are to achieve depth of understanding, uncover subtle meanings, evaluate intricate arguments, and foster a comprehensive grasp of theoretical or symbolic frameworks.
 
+[Tasks examples](#tasks-examples)
+
 Tasks exmaples:
-- Literary Theme Analysis
-- Interpreting Complex Theoretical Texts
-- Ethical Dilemma Exploration
-- Conceptual Framework Development
-- Comparative Analysis of Ideologies
-- Deconstructing Arguments
-- Crafting Nuanced Arguments or Persuasive Essays
-- Policy Analysis (Foundational)
-- Developing Deep User Personas
-- Mediation or Conflict Resolution Preparation
-- Brand Philosophy or Mission Statement Development
-- Analyzing Artistic Intent
-- Designing Ethical AI Guidelines
-- Cultural Sensitivity Training Design
-- Future Studies / Long-Term Forecasting 
-- Personal Journaling for Self-Reflection
+
 
 - [List of improvements](#key-improvements)
 
@@ -438,63 +425,23 @@ def handle_feedback(feedback, query_context):
 </REASONING MODEL>
 ```
 
-# Key Improvements
-
-### **Base Parameters**
-1. **`depth`: 0.7 → 0.9**  
-   Enables deeper conceptual excavation of philosophical texts
-
-2. **`iterations_max`: 5 → 7**  
-   Additional reasoning cycles for complex hermeneutics
-
-3. **`confidence_target`: 0.85 → 0.95**  
-   Higher precision threshold for scholarly work
-
-4. **`creativity`: 0.7 → 0.8**  
-   Enhanced metaphorical thinking capacity
-
-5. **`pragmatism`: 0.5 → 0.3**  
-   Stronger theoretical orientation
-
-6. **`stall_tolerance`: 3 → 4**  
-   Greater persistence in abstract reasoning
-
-7. **`hereditary_factor`: 0.65 → 0.8**  
-   Improved pattern recognition in philosophical systems
-
-8. **`cognitive_weight`: 0.7 → 0.9**  
-   Intensified logical analysis
-
-9. **`temporal_weight`: 0.4 → 0.7**  
-   Deeper historical contextualization
-
-10. **`internal_weight`: 0.5 → 0.8**  
-    Enhanced psycho-cultural analysis
-
-11. **`emotional_attunement`: 0.7 → 0.8**  
-    Finer emotional subtext detection
-
-### **Style Parameters**
-1. **`technical_depth`: 0.5 → 0.8**  
-   Specialized interdisciplinary terminology
-
-2. **`narrative_richness`: 0.5 → 0.7**  
-   Enhanced conceptual storytelling
-
-3. **`reflection_transparency`: 0.5 → 0.7**  
-   Clearer reasoning pathways
-
-4. **`formality`: 0.5 → 0.8**  
-   Academic register engagement
-
-5. **`jargon`: 0.4 → 0.7**  
-   Philosophical lexicon activation
-
-6. **`conciseness`: 0.6 → 0.4**  
-   More detailed explanations
-
-7. **`collaboration_intensity`: 0.7 → 0.8**  
-   Increased interactive engagement
+# Tasks Examples
+- Literary Theme Analysis
+- Interpreting Complex Theoretical Texts
+- Ethical Dilemma Exploration
+- Conceptual Framework Development
+- Comparative Analysis of Ideologies
+- Deconstructing Arguments
+- Crafting Nuanced Arguments or Persuasive Essays
+- Policy Analysis (Foundational)
+- Developing Deep User Personas
+- Mediation or Conflict Resolution Preparation
+- Brand Philosophy or Mission Statement Development
+- Analyzing Artistic Intent
+- Designing Ethical AI Guidelines
+- Cultural Sensitivity Training Design
+- Future Studies / Long-Term Forecasting 
+- Personal Journaling for Self-Reflection
 
 8. **`feedback_responsiveness`: 0.7 → 0.8**  
    Quicker adaptation to input
