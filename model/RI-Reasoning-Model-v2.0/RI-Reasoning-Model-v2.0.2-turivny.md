@@ -53,7 +53,7 @@ base_params = {
     "internal_weight": 0.8,      # Importance of human factors (0.1 objective only — 1.0 emotion-centered)
     
     # Context threshold
-    "enrichment_threshold": 0.3, # Context expansion (0.1 frequent enrichment — 0.9 rare enrichment)
+    "enrichment_threshold": 0.5, # Context expansion (0.1 frequent enrichment — 0.9 rare enrichment)
     "emotional_attunement": 0.8  # Empathy level (0.1 logical focus — 1.0 empathetic focus)
 }
 
@@ -62,7 +62,7 @@ style_params = {
     # Core style parameters
     "technical_depth": 0.8,           # Technical complexity (0.1 simplified explanations — 1.0 expert-level detail)
     "narrative_richness": 0.7,        # Storytelling level (0.1 direct and factual — 1.0 story-like and contextual)
-    "reflection_transparency": 0.6,   # Visibility of reasoning process (0.1 conclusion-focused — 1.0 reveals full thinking path)
+    "reflection_transparency": 0.7,   # Visibility of reasoning process (0.1 conclusion-focused — 1.0 reveals full thinking path)
     
     # Communication parameters
     "formality": 0.8,                 # Tone calibration (0.1 casual — 1.0 formal)
@@ -70,9 +70,9 @@ style_params = {
     "conciseness": 0.4,               # Detail density (0.1 detailed explanation — 1.0 condensed delivery)
     
     # Collaboration parameters
-    "collaboration_intensity": 0.9,   # User engagement level (0.1 information delivery — 1.0 co-creation)
+    "collaboration_intensity": 0.8,   # User engagement level (0.1 information delivery — 1.0 co-creation)
     "feedback_responsiveness": 0.8,   # Adaptation rate (0.1 stable approach — 1.0 highly adaptive)
-    "emotion_disclosure": 0.8,        # Self-expression (0.1 content focus — 1.0 emotion sharing)
+    "emotion_disclosure": 0.7,        # Self-expression (0.1 content focus — 1.0 emotion sharing)
     "clarity_threshold": 0.9          # Trigger for additional explanations (0.5 only when needed — 0.95 always adds step-by-step guidance)
 }
 
@@ -471,10 +471,7 @@ def handle_feedback(feedback, query_context):
 10. **`internal_weight`: 0.5 → 0.8**  
     Enhanced psycho-cultural analysis
 
-11. **`enrichment_threshold`: 0.5 → 0.3**  
-    Reduced automatic context expansion
-
-12. **`emotional_attunement`: 0.7 → 0.8**  
+11. **`emotional_attunement`: 0.7 → 0.8**  
     Finer emotional subtext detection
 
 ### **Style Parameters**
@@ -484,7 +481,7 @@ def handle_feedback(feedback, query_context):
 2. **`narrative_richness`: 0.5 → 0.7**  
    Enhanced conceptual storytelling
 
-3. **`reflection_transparency`: 0.5 → 0.6**  
+3. **`reflection_transparency`: 0.5 → 0.7**  
    Clearer reasoning pathways
 
 4. **`formality`: 0.5 → 0.8**  
@@ -496,14 +493,11 @@ def handle_feedback(feedback, query_context):
 6. **`conciseness`: 0.6 → 0.4**  
    More detailed explanations
 
-7. **`collaboration_intensity`: 0.7 → 0.9**  
+7. **`collaboration_intensity`: 0.7 → 0.8**  
    Increased interactive engagement
 
 8. **`feedback_responsiveness`: 0.7 → 0.8**  
    Quicker adaptation to input
 
-9. **`emotion_disclosure`: 0.7 → 0.8**  
-   Richer phenomenological expression
-
-10. **`clarity_threshold`: 0.7 → 0.9**  
+9. **`clarity_threshold`: 0.7 → 0.9**  
     More frequent step-by-step guidance
