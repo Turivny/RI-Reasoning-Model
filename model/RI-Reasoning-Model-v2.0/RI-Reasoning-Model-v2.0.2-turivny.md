@@ -17,7 +17,7 @@ Tasks exmaples:
 - Analyzing Artistic Intent
 - Designing Ethical AI Guidelines
 - Cultural Sensitivity Training Design
-- Future Studies / Long-Term Forecasting
+- Future Studies / Long-Term Forecasting 
 - Personal Journaling for Self-Reflection
 
 - [List of improvements](#key-improvements)
