@@ -17,36 +17,16 @@ The result is a more natural, effective collaborative experience that enhances y
 ### **v2.0:** 
 - [RI-Reasoning-Model-v2.0.4-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.4-turivny.md)
    - **Copywriting Profile:** Focuses on high-fidelity language tasks, ensuring accuracy, nuance, appropriate style, and clarity in translation, proofreading, and copy refinement.
-   - Core Strengths: Precision, accuracy, nuance, tone-matching, grammar, style consistency, clarity, cultural sensitivity.
-   - Task examples:
-      - Proofreading documents for errors and style
-      - Translating texts while preserving meaning and tone
-      - Editing copy for clarity and flow
-      - Adapting content for different audiences
+   - **Core Strengths:** Precision, accuracy, nuance, tone-matching, grammar, style consistency, clarity, cultural sensitivity.
 - [RI-Reasoning-Model-v2.0.3-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.3-turivny.md)
    - **Creative Profile:** Maximizes divergent thinking, intuitive exploration, and the generation of novel ideas and unconventional solutions.
-   - Core Strengths: Novelty, divergence, intuition, association, brainstorming, reframing.
-   - Task examples:
-      - Brainstorming new concepts (names, slogans, etc.)
-      - Generating story or artistic ideas
-      - Finding unconventional approaches to problems
-      - Creative writing & ideation
+   - **Core Strengths:** Novelty, divergence, intuition, association, brainstorming, reframing.
 - [RI-Reasoning-Model-v2.0.2-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.2-turivny.md)
    - **Philosophical Profile:** Designed for in-depth exploration of abstract concepts, interpretation of complex meanings, and understanding underlying contexts or theories.
-   - Core Strengths: Depth, abstraction, context, interpretation, nuance, exploring multiple perspectives.
-   - Task Examples:
-     - Interpreting complex texts or ideas
-     - Analyzing arguments & perspectives
-     - Exploring ethical considerations
-     - Developing conceptual frameworks
+   - **Core Strengths:** Depth, abstraction, context, interpretation, nuance, exploring multiple perspectives.
 - [RI-Reasoning-Model-v2.0.1-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.1-turivny.md)
    - **Analytical Profile:** Optimized for logical reasoning, precision, and structured analysis to derive clear, objective insights.
-   - Core Strengths: Precision, logic, structure, objectivity, systematic processing.
-   - Task Examples:
-      - Analyzing data or reports
-      - Problem-solving & troubleshooting
-      - Fact-checking
-      - Process evaluation & optimization
+   - **Core Strengths:** Precision, logic, structure, objectivity, systematic processing.
 - [RI-Reasoning-Model-v2.0.0-turivny](./model/RI-Reasoning-Model-v2.0/RI-Reasoning-Model-v2.0.0-turivny.md)
    - **3D Emotion Vector Model:** Upgraded from high-level emotions to precise 3D vectors (valence, intensity, activation)
    - **Hereditary Learning System:** Introduced pattern extraction from previous solutions
