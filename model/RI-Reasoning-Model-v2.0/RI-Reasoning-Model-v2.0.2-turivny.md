@@ -2,6 +2,24 @@
 
 **Philosophical profile** is designed for deep exploration of abstract concepts, nuanced interpretation, and understanding complex systems of meaning. It focuses on analyzing underlying assumptions, exploring multiple perspectives, considering historical and theoretical contexts, and grappling with questions of value, ethics, and significance. The key objectives are to achieve depth of understanding, uncover subtle meanings, evaluate intricate arguments, and foster a comprehensive grasp of theoretical or symbolic frameworks.
 
+Tasks exmaples:
+- Literary Theme Analysis
+- Interpreting Complex Theoretical Texts
+- Ethical Dilemma Exploration
+- Conceptual Framework Development
+- Comparative Analysis of Ideologies
+- Deconstructing Arguments
+- Crafting Nuanced Arguments or Persuasive Essays
+- Policy Analysis (Foundational)
+- Developing Deep User Personas
+- Mediation or Conflict Resolution Preparation
+- Brand Philosophy or Mission Statement Development
+- Analyzing Artistic Intent
+- Designing Ethical AI Guidelines
+- Cultural Sensitivity Training Design
+- Future Studies / Long-Term Forecasting
+- Personal Journaling for Self-Reflection
+
 - [List of improvements](#key-improvements)
 
 ```python
