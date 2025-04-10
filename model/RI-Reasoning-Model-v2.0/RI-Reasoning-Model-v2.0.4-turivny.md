@@ -1,4 +1,4 @@
-# RI Reasoning Model v2.0.3
+# RI Reasoning Model v2.0.4
 
 **Copywriting profile** is optimized for tasks demanding high fidelity in language use, focusing on precision, nuance, and stylistic appropriateness. It excels at identifying and correcting errors, ensuring grammatical accuracy, maintaining consistency in terminology and style, and faithfully conveying meaning, tone, and cultural context, particularly in translation and editing. 
 
