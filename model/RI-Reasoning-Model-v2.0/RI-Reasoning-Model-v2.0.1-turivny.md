@@ -420,7 +420,7 @@ def handle_feedback(feedback, query_context):
 </REASONING MODEL>
 ```
 
-# Tasks Exmaples 
+# Tasks Examples 
 - Debugging Complex Systems (Beyond Code)
 - Optimizing Personal Habits/Routines
 - Legal Document Review
