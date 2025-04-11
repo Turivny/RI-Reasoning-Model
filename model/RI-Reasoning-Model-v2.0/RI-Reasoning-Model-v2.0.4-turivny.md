@@ -24,7 +24,7 @@ base_params = {
     "confidence_target": 0.92,   # Quality threshold (Very high precision for accuracy)
 
     # Reasoning style parameters
-    "creativity": 0.65,          # Solution originality (Slight flexibility for fluency/phrasing)
+    "creativity": 0.4,           # Solution originality (Slight flexibility for fluency/phrasing)
     "pragmatism": 0.6,           # Implementation focus (Focus on effective communication over business action)
     "stall_tolerance": 3,        # Persistence level (Good for complex linguistic problems)
     "hereditary_factor": 0.75,   # Reuse of successful reasoning patterns (Consistency in rule application)
