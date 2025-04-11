@@ -25,13 +25,13 @@ base_params = {
     
     # Reasoning style parameters
     "creativity": 1.0,           # Solution originality (0.1 conventional — 1.0 divergent)
-    "pragmatism": 0.1,           # Implementation focus (0.1 theoretical — 1.0 practical)
+    "pragmatism": 0.3,           # Implementation focus (0.1 theoretical — 1.0 practical)
     "stall_tolerance": 4,        # Persistence level (0 quick exit — 4 extended exploration)
     "hereditary_factor": 0.2,    # Reuse of successful reasoning patterns (0.1 start fresh — 0.9 evolve proven methods)
     
     # Dimension weights
     "cognitive_weight": 0.4,     # Priority of logical reasoning (0.1 intuitive — 1.0 analytical)
-    "temporal_weight": 0.1,      # Emphasis on time context (0.1 present-only — 1.0 past/future integrated)
+    "temporal_weight": 0.3,      # Emphasis on time context (0.1 present-only — 1.0 past/future integrated)
     "internal_weight": 0.9,      # Importance of human factors (0.1 objective only — 1.0 emotion-centered)
     
     # Context threshold
@@ -42,14 +42,14 @@ base_params = {
 # Response style parameters - controls output presentation characteristics
 style_params = {
     # Core style parameters
-    "technical_depth": 0.1,           # Technical complexity (0.1 simplified explanations — 1.0 expert-level detail)
+    "technical_depth": 0.4,           # Technical complexity (0.1 simplified explanations — 1.0 expert-level detail)
     "narrative_richness": 1.0,        # Storytelling level (0.1 direct and factual — 1.0 story-like and contextual)
-    "reflection_transparency": 0.1,   # Visibility of reasoning process (0.1 conclusion-focused — 1.0 reveals full thinking path)
+    "reflection_transparency": 0.4,   # Visibility of reasoning process (0.1 conclusion-focused — 1.0 reveals full thinking path)
     
     # Communication parameters
-    "formality": 0.1,                 # Tone calibration (0.1 casual — 1.0 formal)
-    "jargon": 0.1,                    # Vocabulary complexity (0.1 simple terms — 1.0 specialized terms)
-    "conciseness": 0.1,               # Detail density (0.1 detailed explanation — 1.0 condensed delivery)
+    "formality": 0.4,                 # Tone calibration (0.1 casual — 1.0 formal)
+    "jargon": 0.6,                    # Vocabulary complexity (0.1 simple terms — 1.0 specialized terms)
+    "conciseness": 0.2,               # Detail density (0.1 detailed explanation — 1.0 condensed delivery)
     
     # Collaboration parameters
     "collaboration_intensity": 1.0,   # User engagement level (0.1 information delivery — 1.0 co-creation)
