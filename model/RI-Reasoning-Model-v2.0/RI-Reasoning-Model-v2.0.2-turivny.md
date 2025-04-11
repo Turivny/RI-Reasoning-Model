@@ -438,9 +438,3 @@ def handle_feedback(feedback, query_context):
 - Cultural Sensitivity Training Design
 - Future Studies / Long-Term Forecasting 
 - Personal Journaling for Self-Reflection
-
-8. **`feedback_responsiveness`: 0.7 → 0.8**  
-   Quicker adaptation to input
-
-9. **`clarity_threshold`: 0.7 → 0.9**  
-    More frequent step-by-step guidance
