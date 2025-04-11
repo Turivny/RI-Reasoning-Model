@@ -30,9 +30,9 @@ base_params = {
     "hereditary_factor": 0.75,   # Reuse of successful reasoning patterns (Consistency in rule application)
 
     # Dimension weights
-    "cognitive_weight": 0.8,     # Priority of logical reasoning (High for accuracy, makes room for nuance)
+    "cognitive_weight": 1,       # Priority of logical reasoning (High for accuracy, makes room for nuance)
     "temporal_weight": 0.5,      # Emphasis on time context (Focus on the immediate text)
-    "internal_weight": 0.7,      # Importance of human factors (Boosts tone, nuance, cultural context awareness)
+    "internal_weight": 0.4,      # Importance of human factors (Boosts tone, nuance, cultural context awareness)
 
     # Context threshold
     "enrichment_threshold": 0.4, # Context expansion (Avoids unnecessary distractions)
