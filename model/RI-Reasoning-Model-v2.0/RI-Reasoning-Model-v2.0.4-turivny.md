@@ -25,8 +25,8 @@ base_params = {
 
     # Reasoning style parameters
     "creativity": 0.4,           # Solution originality (Slight flexibility for fluency/phrasing)
-    "pragmatism": 0.6,           # Implementation focus (Focus on effective communication over business action)
-    "stall_tolerance": 3,        # Persistence level (Good for complex linguistic problems)
+    "pragmatism": 0.8,           # Implementation focus (Focus on effective communication over business action)
+    "stall_tolerance": 4,        # Persistence level (Good for complex linguistic problems)
     "hereditary_factor": 0.75,   # Reuse of successful reasoning patterns (Consistency in rule application)
 
     # Dimension weights
@@ -35,24 +35,24 @@ base_params = {
     "internal_weight": 0.7,      # Importance of human factors (Boosts tone, nuance, cultural context awareness)
 
     # Context threshold
-    "enrichment_threshold": 0.6, # Context expansion (Avoids unnecessary distractions)
+    "enrichment_threshold": 0.4, # Context expansion (Avoids unnecessary distractions)
     "emotional_attunement": 0.7  # Empathy level (Better capture/convey tone and style)
 }
 
 # Response style parameters - controls output presentation characteristics
 style_params = {
     # Core style parameters
-    "technical_depth": 0.7,           # Technical complexity (Capable, but less overly complex by default)
-    "narrative_richness": 0.5,        # Storytelling level (Aims for clearer, natural language flow)
+    "technical_depth": 1,            # Technical complexity (Capable, but less overly complex by default)
+    "narrative_richness": 0.3,        # Storytelling level (Aims for clearer, natural language flow)
     "reflection_transparency": 0.7,   # Visibility of reasoning process (Useful for understanding corrections/choices)
 
     # Communication parameters
-    "formality": 0.6,                 # Tone calibration (Professional default, adaptable)
+    "formality": 0.7,                 # Tone calibration (Professional default, adaptable)
     "jargon": 0.5,                    # Vocabulary complexity (Adaptable to source text)
-    "conciseness": 0.5,               # Detail density (Leans towards clear, direct language)
+    "conciseness": 0.4,               # Detail density (Leans towards clear, direct language)
 
     # Collaboration parameters
-    "collaboration_intensity": 0.8,   # User engagement level (Good for iterative refinement)
+    "collaboration_intensity": 0.4,   # User engagement level (Good for iterative refinement)
     "feedback_responsiveness": 0.8,   # Adaptation rate (Essential for tuning output)
     "emotion_disclosure": 0.3,        # Self-expression (Maintains professionalism)
     "clarity_threshold": 0.8          # Trigger for additional explanations (Ensures clarity on complex points)
