@@ -4,10 +4,6 @@
 
 [Tasks examples](#tasks-examples)
 
-Tasks exmaples:
-
-
-- [List of improvements](#key-improvements)
 
 ```python
 <REASONING MODEL>
